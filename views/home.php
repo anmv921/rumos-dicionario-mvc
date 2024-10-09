@@ -178,137 +178,167 @@
                         Browse the English Dictionary
                     </h2>
     
-                    <div class="grid grid-cols-7 gap-4 mx-5 text-center">
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                        <a href="#">
+                    <div class="grid grid-cols-7 gap-4 mx-4 text-center">
+                        <div class="flex items-center" >
+                        <a class="bg-sky-300 px-2 py-1 rounded-full hover:bg-sky-400"
+                        href="#">
                             0-9
                         </a>    
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">a</a>
+                        <div class="flex items-center" >
+                            <a class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400"
+                            href="#">
+                                a
+                        </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400"
+                            >
                                 b
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#" 
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 c
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 d
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 e
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 f
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 g
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 h
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 i
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 j
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 k
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 l
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 m
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 n
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 o
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 p
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 q
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 r
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 s
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 t
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 u
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 v
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 w
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 x
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#">
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 y
                             </a>
                         </div>
-                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
-                            <a href="#"  >
+                        <div class="flex items-center">
+                            <a href="#"
+                            class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
                                 z
                             </a>
                         </div>
