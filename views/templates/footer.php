@@ -1,6 +1,6 @@
 <footer>
         <section 
-        class="flex flex-row gap-10 p-6 bg-sky-600 text-white font-semibold">
+        class="flex flex-row gap-10 p-7 bg-sky-600 text-white font-semibold">
             <ul >
                 <li class="uppercase pb-3 hover:underline cursor-pointer">
                     Learn
