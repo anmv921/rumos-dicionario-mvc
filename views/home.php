@@ -15,31 +15,9 @@
     <link rel="icon" type="image/x-icon" href="images/bolt-lightning-solid.svg">
 </head>
 <body class="font-roboto">
-    <!-- ********** -->
-    <!-- * HEADER * -->
-    <!-- ********** -->
-    <header>
-        <nav class="flex flex-row justify-between bg-sky-600 text-white font-bold p-6" >
-            <ul class="flex flex-row gap-4" >
-                    <li class="cursor-pointer">
-                        <i class="fa-solid fa-bars "></i>
-                    </li>
-
-            </ul>
-
-            <ul class="flex flex-row gap-4">
-            
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-user"></i> Log in / Sign up 
-                    </a>
-                </li>
-                
-            </ul>
-        </nav>
-
-    </header>
-
+    
+    <?php require ("templates/header.php"); ?>
+        
     <main>
         <!-- ****** -->
         <!-- SEARCH -->
@@ -178,7 +156,7 @@
                         Browse the English Dictionary
                     </h2>
     
-                    <div class="grid grid-cols-7 gap-4 mx-4 text-center">
+                    <div class="grid grid-cols-7 gap-4 mx-4 text-center place-items-center">
                         <div class="flex items-center" >
                         <a class="bg-sky-300 px-2 py-1 rounded-full hover:bg-sky-400"
                         href="#">
@@ -349,44 +327,8 @@
             </section>
     </main>
 
-    <footer>
-        <section 
-        class="flex flex-row gap-10 p-6 bg-sky-600 text-white font-semibold">
-            <ul >
-                <li class="uppercase pb-3">
-                    Learn
-                </li>
-                <li class="hover:underline cursor-pointer" >
-                    New Words
-                </li>
-                <li class="hover:underline cursor-pointer">
-                    Word of the Year 2021
-                </li>
-                <li class="hover:underline cursor-pointer">
-                    Word of the Year 2022
-                </li>
-                <li class="hover:underline cursor-pointer">
-                    Word of the Year 2023
-                </li>
-            </ul>
-            <ul>
-                <li class="uppercase pb-3">
-                    Develop
-                </li>
-                <li class="hover:underline cursor-pointer">Dictionary API</li>
-            </ul>
-            <ul>
-                <li class="uppercase pb-3">
-                    About
-                </li>
-                <li class="hover:underline cursor-pointer">Preferences</li>
-                <li class="hover:underline cursor-pointer">Cookies and Privacy</li>
-                <li class="hover:underline cursor-pointer">Corpus</li>
-                <li class="hover:underline cursor-pointer">Terms of Use</li>
-            </ul>
-        </section>
-       
+    <?php require ("templates/footer.php"); ?>
 
-    </footer>
+    
 </body>
 </html>
