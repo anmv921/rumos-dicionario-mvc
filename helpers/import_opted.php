@@ -6,35 +6,67 @@ $base = new Base();
 
 $filepath = "C:\\Users\\an.m\\Desktop\\Code\\rumos-dicionario-proj-backend\\rumos-dicionario-mvc\\data\\opted\\OPTED-Dictionary.csv";
 
-$row = 2;
-if (($handle = fopen($filepath, "r")) !== FALSE) {
-    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+$row = 1;
+
+$words = [];
+$definitions = [];
+
+$i = 0;
+$lastWord = "";
+
+if ( ( $handle = fopen($filepath, "r") ) !== FALSE ) {
+
+    // Skip 1st line - headers
+    fgetcsv($handle, 2000, ",");
+    $row++;
+
+    while ( ( $data = fgetcsv($handle, 2000, ",") ) !== FALSE ) {
         $num = count($data);
-
-        if ( $row % 100 == 0 ) {
-            echo "<p> Row - $row <br /></p>\n";
-        }
-
-        // echo "<p> $num fields in line $row: <br /></p>\n";
-
         $row++;
 
-        $query = $base->db->prepare("
-			INSERT INTO word_definition
-			(Word, Count, POS, Definition)
-			VALUES(?, ?, ?, ?)
-		");
+        if ( $lastWord !== $data[0] ) {
 
-		$query->execute([
-			$data[0],
-			$data[1],
-            $data[2],
-            $data[3]
-		]);
+            $i++;
+            $lastWord = $data[0];
 
-        // for ($c=0; $c < $num; $c++) {
-        //     echo $data[$c] . "<br />\n";
-        // }
+            $words[] = [
+                "id_word" => $i,
+                "word" => $data[0]
+            ];
+        }
+
+        $definitions[] = [
+            "id_word" => $i,
+            "pos" => $data[2],
+            "definition" => $data[3]
+        ];
     }
     fclose($handle);
+}
+
+foreach($words as $word) {
+    $query = $base->db->prepare("
+			INSERT INTO word
+			(id_word, Word)
+			VALUES(?, ?)
+    ");
+
+    $query->execute([
+        $word["id_word"],
+        $word["word"]
+    ]);
+}
+
+foreach($definitions as $definition) {
+    $query = $base->db->prepare("
+			INSERT INTO definition
+			(id_word, POS, Definition)
+			VALUES(?, ?, ?)
+    ");
+
+    $query->execute([
+        $definition["id_word"],
+        $definition["pos"],
+        $definition["definition"]
+    ]);
 }

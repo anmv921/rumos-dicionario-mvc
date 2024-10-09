@@ -1,4 +1,362 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightning Dictionary</title>
 
-echo "olá<br>";
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="images/bolt-lightning-solid.svg">
+</head>
+<body class="font-roboto">
+    <!-- ********** -->
+    <!-- * HEADER * -->
+    <!-- ********** -->
+    <header>
+        <nav class="flex flex-row justify-between bg-sky-600 text-white font-bold p-6" >
+            <ul class="flex flex-row gap-4" >
+                    <li class="cursor-pointer">
+                        <i class="fa-solid fa-bars "></i>
+                    </li>
+
+            </ul>
+
+            <ul class="flex flex-row gap-4">
+            
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i> Log in / Sign up 
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- ****** -->
+        <!-- SEARCH -->
+        <!-- ****** -->
+        <section class="flex flex-row justify-between p-7
+        bg-gradient-to-r from-cyan-500 to-blue-500 mb-20" >
+
+            <div class="flex flex-row items-center">
+                <div>
+                    <img class="w-32"
+                    src="images/Blason_Pont-de-Claix.svg.png" alt="">
+                </div>
+    
+                <div class="p-7 text-white font-semibold">
+                    <h1 class="p-1 text-2xl max-w-48">
+                        Lightning Dictionary
+                    </h1>
+    
+                    <h2 class="p-1 text-lg">
+                        Insert inspirational quote here
+                    </h2>
+                </div>
+            </div>
+            
+            <div class="p-7" >
+                <search>
+                    <form action="search-word" >
+                        
+                        <div class="pt-1 pb-1 flex flex-row h-12 flex-nowrap">
+                            <input class="w-96  rounded-l-2xl rounded-r-2xl 
+                             px-4"
+                            type="search" id="search-word" name="search-word" 
+                            placeholder="Search English"/>
+
+                            <button 
+                            class="bg-yellow-300 flex items-center justify-center
+                            rounded-3xl font-extrabold w-1.5 h-1.5 p-5 text-center ml-
+                            hover:bg-yellow-400"
+                                type="submit">
+                                <i class=" fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+
+                  
+
+                    </form>
+                </search>
+            </div>
+        </section>
+
+       
+
+            <section class="m-14" >
+
+                <h1 class="text-3xl my-3" >
+                    Explore the Dictionary
+                </h1>
+
+    
+                <section class="border-solid border-2 border-neutral-100 w-1/2 p-3 my-5">
+
+                    <div class="flex flex-row justify-between" >
+
+                        <div class="w-1/2 bg-yellow-300 
+                        flex flex-col justify-center text-center">
+
+                                <div class="text-lg uppercase">
+                                    Word of the day
+                                </div>
+
+                                <div class="text-3xl lowercase">
+                                    Cheek
+                                </div>
+                        </div>
+
+                        <div class="p-3 w-1/2" >
+                            
+                            <p class="py-2">
+                                The soft part of your face that is below your eye
+                                and between your mouth and ear
+                            </p>
+            
+                            <button class="bg-sky-600 py-1 px-6 text-white
+                            rounded-2xl 
+                            hover:bg-sky-700
+                            font-semibold"
+                            
+                            type="button" >
+                                About this
+                            </button>
+                        </div>
+
+                    </div>
+    
+                
+                </section>
+    
+                <section class="border-solid border-2 border-neutral-100 w-1/2 p-3 my-5">
+
+                    <div class="flex flex-row justify-between" >
+
+                        <div class="w-1/2">
+                            <img src="images/word-cloud-679936_1280.png" alt="">
+                        </div>
+
+
+                        <div class="p-3 w-1/2" >
+
+                            <h2 class="text-lg font-medium uppercase font-thin" >
+                                New words
+                            </h2>
+            
+                            <h3 class="text-3xl py-2">
+                                thinification
+                            </h3>
+            
+                            <div class="text-xs text-slate-400 font-semibold py-2" >
+                                September 30, 2024
+                            </div>
+            
+                            <button type="button" 
+                            class="bg-sky-600 py-1 px-6 text-white py-2
+                            hover:bg-sky-700
+                            rounded-2xl font-semibold" >
+                                More new words
+                            </button>
+                        </div>
+                    </div>
+
+                  
+                </section>
+
+
+                <section class="bg-sky-600 w-1/2 p-3 my-5 text-white font-semibold">
+                    <h2 class="text-2xl m-5">
+                        Browse the English Dictionary
+                    </h2>
+    
+                    <div class="grid grid-cols-7 gap-4 mx-5 text-center">
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                        <a href="#">
+                            0-9
+                        </a>    
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">a</a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                b
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                c
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                d
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                e
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                f
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                g
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                h
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                i
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                j
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                k
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                l
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                m
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                n
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                o
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                p
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                q
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                r
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                s
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                t
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                u
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                v
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                w
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                x
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#">
+                                y
+                            </a>
+                        </div>
+                        <div class="bg-sky-300 px-1 rounded-lg hover:bg-sky-400" >
+                            <a href="#"  >
+                                z
+                            </a>
+                        </div>
+                    </div>
+    
+                </section>
+
+            </section>
+    </main>
+
+    <footer>
+        <section 
+        class="flex flex-row gap-10 p-6 bg-sky-600 text-white font-semibold">
+            <ul >
+                <li class="uppercase pb-3">
+                    Learn
+                </li>
+                <li class="hover:underline cursor-pointer" >
+                    New Words
+                </li>
+                <li class="hover:underline cursor-pointer">
+                    Word of the Year 2021
+                </li>
+                <li class="hover:underline cursor-pointer">
+                    Word of the Year 2022
+                </li>
+                <li class="hover:underline cursor-pointer">
+                    Word of the Year 2023
+                </li>
+            </ul>
+            <ul>
+                <li class="uppercase pb-3">
+                    Develop
+                </li>
+                <li class="hover:underline cursor-pointer">Dictionary API</li>
+            </ul>
+            <ul>
+                <li class="uppercase pb-3">
+                    About
+                </li>
+                <li class="hover:underline cursor-pointer">Preferences</li>
+                <li class="hover:underline cursor-pointer">Cookies and Privacy</li>
+                <li class="hover:underline cursor-pointer">Corpus</li>
+                <li class="hover:underline cursor-pointer">Terms of Use</li>
+            </ul>
+        </section>
+       
+
+    </footer>
+</body>
+</html>

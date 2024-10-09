@@ -17,7 +17,7 @@ class Base
         );
     }
 
-    public function isValidKey($api_key){
+    public function isValidKey($api_key) {
 
         $query = $this->db->prepare("
             SELECT
