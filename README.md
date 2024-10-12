@@ -22,6 +22,3 @@ The font used is roboto, from google fonts;
 
 The icons used are from font awesome.
 
-The site can be run with npm command -> live-server --port=9090
-
-live server is installed with -> npm install -g live-server
