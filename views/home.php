@@ -10,67 +10,51 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <?php 
+    // echo  (ROOT . "/css/style.css")
+    ?>
 
-    <link rel="icon" type="image/x-icon" href="images/bolt-lightning-solid.svg">
+    <link rel="stylesheet" href="css/style.css" >
+
+    <!-- <link rel="icon" type="image/x-icon" href="images/bolt-lightning-solid.svg"> -->
 </head>
 <body class="font-roboto">
     
     <?php require ("templates/header.php"); ?>
         
     <main>
-        <!-- ****** -->
-        <!-- SEARCH -->
-        <!-- ****** -->
+        
         <section class="flex flex-row justify-between p-7
         bg-gradient-to-r from-cyan-500 to-blue-500 mb-20" >
-
             <div class="flex flex-row items-center">
                 <div>
                     <img class="w-32"
                     src="images/Blason_Pont-de-Claix.svg.png" alt="">
                 </div>
-    
                 <div class="p-7 text-white font-semibold">
                     <h1 class="p-1 text-2xl max-w-48">
                         Lightning Dictionary
                     </h1>
-    
                     <h2 class="p-1 text-lg">
-                        Insert inspirational quote here
+                        Insert inspirational quote about words here
                     </h2>
                 </div>
             </div>
-            
+
+            <!-- ****** -->
+            <!-- SEARCH -->
+            <!-- ****** -->
             <div class="p-7" >
-                <search>
-                    <form method="POST" 
-                    action="<?= ROOT ?>/search_word/" >
-                        
-                        <div class="pt-1 pb-1 flex flex-row h-12 flex-nowrap">
-                            <input class="w-96  rounded-l-2xl rounded-r-2xl 
-                             px-4"
-                            type="search" id="search-word" name="search-word" 
-                            placeholder="Search English"/>
-
-                            <button 
-                            class="bg-yellow-300 flex items-center justify-center
-                            rounded-3xl font-extrabold w-1.5 h-1.5 p-5 text-center ml-
-                            hover:bg-yellow-400"
-                                type="submit">
-                                <i class=" fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </div>
-
-                  
-
-                    </form>
-                </search>
+            <?php require ("templates/search.php"); ?>
             </div>
+
+
         </section>
 
-       
 
+            <!-- /*********** -->
+            <!-- * EXPLORE * -->
+            <!-- ***********/ -->
             <section class="m-14" >
 
                 <h1 class="text-3xl my-3" >
@@ -132,11 +116,11 @@
                             </h2>
             
                             <h3 class="text-3xl py-2">
-                                thinification
+                                boomerocracy
                             </h3>
             
                             <div class="text-xs text-slate-400 font-semibold py-2" >
-                                September 30, 2024
+                                October 07, 2024
                             </div>
             
                             <button type="button" 
