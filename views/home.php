@@ -10,13 +10,9 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <?php 
-    // echo  (ROOT . "/css/style.css")
-    ?>
-
     <link rel="stylesheet" href="css/style.css" >
 
-    <!-- <link rel="icon" type="image/x-icon" href="images/bolt-lightning-solid.svg"> -->
+    <link rel="icon" type="image/x-icon" href="images/bolt-lightning-solid.svg">
 </head>
 <body class="font-roboto">
     
