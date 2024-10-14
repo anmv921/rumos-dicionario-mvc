@@ -1,4 +1,4 @@
-
+<!-- TODO mudar para GET -->
                 <search>
                     <form method="POST" 
                     action="<?= ROOT ?>/word/" >

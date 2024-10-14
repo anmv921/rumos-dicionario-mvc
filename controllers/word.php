@@ -9,14 +9,20 @@ $modelDefinition = new Definition();
 $word = $modelWord->searchWord($_POST["search-word"]);
 $definitions = $modelDefinition->getDefinitions($word["id_word"]);
 
-
-$examples = [];
-
+$i = 0;
 foreach($definitions as $definition) {
-    $examples[] = [
-        "id_definition" => $definition["id_definition"],
-        "text" => $modelDefinition->getExamples($definition["id_definition"])
-    ];
+
+    $def_examples = $modelDefinition->getExamples( $definition["id_definition"] );
+    if ( $def_examples ) {
+        $definitions[$i]["examples"] = $def_examples;
+    }
+
+    $def_synonyms = $modelDefinition->getSynonyms( $definition["id_definition"] );
+    if ( $def_synonyms ) {
+        $definitions[$i]["synonyms"] = $def_synonyms;
+    }
+
+    $i++;
 }
 
 require("views/word.php");

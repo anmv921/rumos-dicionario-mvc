@@ -44,4 +44,27 @@ class Definition extends Base {
         return $query->fetchAll();
     }
 
+    public function getSynonyms( $id_idDefinition ) {
+        $query = $this->db->prepare("
+            SELECT 
+                word.Word 
+            FROM 
+                definition_has_synonym
+            LEFT JOIN 
+                synonym 
+            ON 
+                definition_has_synonym.id_synonym = synonym.id_synonym 
+            LEFT JOIN 
+                word 
+            ON 
+                synonym.id_word = word.id_word 
+            WHERE 
+                definition_has_synonym.id_definition = ?; 
+        ");
+
+        $query->execute( [ $id_idDefinition ] );
+
+        return $query->fetchAll();
+    }
+
 }
