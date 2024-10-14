@@ -11,7 +11,7 @@ class Definition extends Base {
                 definition.id_definition, definition.POS, definition.Definition 
             FROM 
                 word 
-            JOIN 
+            LEFT JOIN 
                 definition 
             ON 
                 word.id_word = definition.id_word 
@@ -30,7 +30,7 @@ class Definition extends Base {
                 example_phrase.text 
             FROM 
                 example_phrase 
-            JOIN 
+            LEFT JOIN 
                 definition_has_example_phrase 
             ON 
                 definition_has_example_phrase.id_example = 
