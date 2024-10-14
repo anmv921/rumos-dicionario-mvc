@@ -6,7 +6,7 @@ require("models/definition.php");
 $modelWord = new Word();
 $modelDefinition = new Definition();
 
-$word = $modelWord->searchWord($_POST["search-word"]);
+$word = $modelWord->searchWord($_GET["search-word"]);
 $definitions = $modelDefinition->getDefinitions($word["id_word"]);
 
 $i = 0;

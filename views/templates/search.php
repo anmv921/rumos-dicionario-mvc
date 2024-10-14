@@ -1,6 +1,6 @@
 <!-- TODO mudar para GET -->
                 <search>
-                    <form method="POST" 
+                    <form method="GET" 
                     action="<?= ROOT ?>/word/" >
                         <div class="pt-1 pb-1 flex flex-row h-12 flex-nowrap">
                             <input class="w-96  rounded-l-2xl rounded-r-2xl 
