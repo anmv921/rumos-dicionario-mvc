@@ -83,7 +83,17 @@
                         <?php
                         
                         foreach($definition["synonyms"] as $synonym) {
-                            echo "<li class=\"underline\">" . $synonym["Word"] . "</li>";
+                            ?>
+
+                                <li class="underline">
+                                    <a 
+                                    href="/word/?search-word=<?php echo $synonym["Word"]; ?>">
+                                        <?php echo $synonym["Word"]; ?>
+                                    </a>
+                                </li>
+
+       
+                            <?php
                         }
                     };
                 ?>
