@@ -71,32 +71,22 @@
                 
                 <ul>
 
-                <?php
-                    if ( isset($definition["synonyms"]) ) {  
+                <?php if ( isset($definition["synonyms"]) ) { ?> 
 
-                        ?>
+                    <p class="font-semibold" >
+                        Synonyms:
+                    </p>
 
-                        <p class="font-semibold" >
-                            Synonyms:
-                        </p>
+                    <?php foreach($definition["synonyms"] as $synonym) { ?>
+                        <li class="underline">
+                            <a 
+                            href="/word/?search-word=<?php echo $synonym["Word"]; ?>">
+                                <?php echo $synonym["Word"]; ?>
+                            </a>
+                        </li>
 
-                        <?php
-                        
-                        foreach($definition["synonyms"] as $synonym) {
-                            ?>
-
-                                <li class="underline">
-                                    <a 
-                                    href="/word/?search-word=<?php echo $synonym["Word"]; ?>">
-                                        <?php echo $synonym["Word"]; ?>
-                                    </a>
-                                </li>
-
-       
-                            <?php
-                        }
-                    };
-                ?>
+                    <?php }
+                }; ?>
 
                 </ul>
           
