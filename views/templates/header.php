@@ -17,7 +17,7 @@
             <ul class="flex flex-row gap-4">
             
                 <li>
-                    <a href="#" class="hover:underline">
+                    <a href="/register/" class="hover:underline">
                         <i class="fa-solid fa-user "></i> Log in / Sign up 
                     </a>
                 </li>
