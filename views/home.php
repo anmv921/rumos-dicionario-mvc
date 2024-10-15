@@ -112,7 +112,7 @@
                             </h2>
             
                             <h3 class="text-3xl py-2">
-                                boomerocracy
+                                noctalgia
                             </h3>
             
                             <div class="text-xs text-slate-400 font-semibold py-2" >
