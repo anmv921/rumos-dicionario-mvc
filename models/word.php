@@ -9,12 +9,21 @@ class Word extends Base {
         // TODO full text search
         
         $query = $this->db->prepare("
-            SELECT word.id_word, Word
-            FROM word
-            WHERE word.Word LIKE ?
+            SELECT 
+                word.id_word, Word
+            FROM 
+                word
+            WHERE 
+                word.Word = ?
+            OR
+                word.Word LIKE ?
+            
         ");
 
-        $query->execute( [ "%" . $in_word  . "%" ] );
+        $query->execute([ 
+            "%" . $in_word  . "%",
+            $in_word 
+        ]);
 
         return $query->fetch();
     }

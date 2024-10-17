@@ -14,7 +14,7 @@
 
     <link rel="icon" type="image/x-icon" href="images/bolt-lightning-solid.svg">
 </head>
-<body class="font-roboto">
+<body class="font-roboto" >
     
     <?php require ("templates/header.php"); ?>
         
@@ -70,15 +70,14 @@
                                 </div>
 
                                 <div class="text-3xl lowercase">
-                                    Cheek
+                                    Rare
                                 </div>
                         </div>
 
                         <div class="p-3 w-1/2" >
                             
                             <p class="py-2">
-                                The soft part of your face that is below your eye
-                                and between your mouth and ear
+                                (of meat) not cooked for very long and still red
                             </p>
             
                             <button class="bg-sky-600 py-1 px-6 text-white
