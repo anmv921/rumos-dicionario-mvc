@@ -32,7 +32,7 @@
                         Lightning Dictionary
                     </h1>
                     <h2 class="p-1 text-lg">
-                        Insert inspirational quote about words here
+                        Words and such
                     </h2>
                 </div>
             </div>
