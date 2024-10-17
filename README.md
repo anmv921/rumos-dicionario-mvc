@@ -10,7 +10,7 @@ npx tailwindcss init -> generates tailwind.config.js
 
 added, a script in package.json -> "build-css": "tailwindcss build -i style.css -o css/style.css"
 
-in tailwind.config.js added './views/.php' to content so that tailwind styles are applied to html files
+in tailwind.config.js added './views/*.php' to content so that tailwind styles are applied to html files
 
 to run the script we use: 
 
