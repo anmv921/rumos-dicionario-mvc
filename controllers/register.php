@@ -2,6 +2,8 @@
 
 require("models/user.php");
 
+$bool_sendEmail = true;
+
 $modelUser = new User();
 $bool_success = false;
 $arr_errors = [];
@@ -51,7 +53,22 @@ if (isset ($_POST["register-user"])) {
         $user = $modelUser->getByEmail($_POST["email"]);
         if ( empty($user) ) {
             $createdUser = $modelUser->createUser($_POST);
-            $_SESSION["id_user"] = $createdUser["id_user"];
+
+            $id_user = $createdUser["id_user"];
+            $_SESSION["id_user"] = $id_user;
+            $activation_key =  $createdUser["activation_key"];
+            
+
+            if ( $bool_sendEmail ) {
+
+                // This would be replaced with the name of the new user
+                // But we're just playing pretend here
+                $receiverAddress = "andriy.myakush@gmail.com";
+                $receiverName = "Yours truly";
+                
+                require("services/gmail.php");
+            }
+
             $bool_success = true;
         }
         else {

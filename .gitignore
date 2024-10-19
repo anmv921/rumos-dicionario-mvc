@@ -1,7 +1,9 @@
 /images
 /other
 .env
-/data
+/data/plan/
+/data/opted/
 .vscode/
 /node_modules
 README.md.backup
+/vendor

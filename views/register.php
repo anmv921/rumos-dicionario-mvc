@@ -90,7 +90,6 @@
         </div>
 
         <?php if( isset( $arr_errors ) ) { ?>
-
                 <div class="w-4/8 m-auto text-center">
                     <?php foreach($arr_errors as $error) { ?>
                         <li class="text-red-500 list list-none" >
@@ -106,6 +105,8 @@
                 "User creation OK"
             </div>
         <?php } ?> 
+
+
     </fieldset>
 
 </form>

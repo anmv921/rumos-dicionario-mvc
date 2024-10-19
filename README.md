@@ -1,5 +1,15 @@
 # rumos-dicionario-mvc
 
+## Email
+
+composer require phpmailer/phpmailer
+
+https://github.com/PHPMailer/PHPMailer/blob/master/examples/gmail.phps 
+
+https://myaccount.google.com/apppasswords 
+
+## Tailwind
+
 Tailwind is installed with:
 
 >npm install -d tailwindcss@latest postcss@latest autoprefixer@latest
