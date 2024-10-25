@@ -43,6 +43,14 @@
                     <?php echo strtolower($word["Word"]); ?>
                 </h2>
 
+                <p>
+                    <button class="bg-yellow-300 font-extrabold py-0.5 px-2
+                    hover:bg-yellow-400 rounded-2xl"
+                     type="button"> 
+                        <i class="fa-solid fa-list"></i> Add word to a list
+                    </button>
+                </p>
+
                 <p class="italic" >
                     <?php echo $definition["POS"]; ?>
                 </p>

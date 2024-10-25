@@ -30,7 +30,7 @@
             <?php } else { ?>
                 <div class="w-4/8 m-auto text-center">
                     <div class="text-red-500" >
-                        Wrong activation key
+                        Activation error
                     </div>
                 </div>
             <?php } ?>

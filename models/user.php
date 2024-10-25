@@ -6,7 +6,7 @@ class User extends Base {
     public function getUsers() {
         $query = $this->db->prepare("
                 SELECT 
-                    id_user, name, email, is_admin 
+                    id_user, name, email, is_admin, is_active
                 FROM 
                     user;
             ");
@@ -16,14 +16,15 @@ class User extends Base {
             return $query->fetchAll();
     } // End function 
 
-    public function getUser($in_id) {
+    public function getUser( $in_id ) {
         $query = $this->db->prepare("
                 SELECT 
                     id_user,
                     name,
                     email,is_admin,
                     is_active,
-                    activation_key
+                    activation_key,
+                    is_admin
                 FROM 
                     user
                 WHERE
@@ -34,6 +35,22 @@ class User extends Base {
     
             return $query->fetch();
     } // End function getUser
+
+
+    public function getByEmail( $in_email ) {
+        $query = $this->db->prepare("
+                SELECT 
+                    id_user, password, is_active, name
+                FROM 
+                    user
+                WHERE 
+                    email = ?
+            ");
+
+            $query->execute([ $in_email ]);
+
+            return $query->fetch();
+    } // End function getByEmail
 
     public function createUser($data) {
 
@@ -62,33 +79,14 @@ class User extends Base {
         return $data;
     } // End function createUser
 
-    public function getByEmail( $in_email ) {
-        $query = $this->db->prepare("
-                SELECT 
-                    id_user, password
-                FROM 
-                    user
-                WHERE 
-                    email = ?
-            ");
-
-            $query->execute([ $in_email ]);
-
-            return $query->fetch();
-    } // End function getByEmail
-
     public function activateUser($in_id) {
          $query = $this->db->prepare("
             UPDATE user SET 
-            is_active=TRUE 
+            is_active=1 
             WHERE id_user = ?
          ");
-
-         $query->execute([ $in_id ]);
-
-
-
-    } // End function
+         return $query->execute([ $in_id ]);
+    } // End function activateUser
 
 } // End class
 

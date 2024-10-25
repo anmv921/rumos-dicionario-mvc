@@ -25,7 +25,7 @@ $mail->isSMTP();
 //SMTP::DEBUG_OFF = off (for production use)
 //SMTP::DEBUG_CLIENT = client messages
 //SMTP::DEBUG_SERVER = client and server messages
-$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+$mail->SMTPDebug = SMTP::DEBUG_OFF;
 
 //Set the hostname of the mail server
 $mail->Host = ENV["EMAIL_HOST"];
@@ -90,11 +90,15 @@ $mail->AltBody = 'This is a plain-text message body';
 //Attach an image file
 //$mail->addAttachment('images/phpmailer_mini.png');
 
+
+
+$mail_result = $mail->send();
+
 //send the message, check for errors
-if (!$mail->send()) {
+if ( !$mail_result ) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    echo 'Message sent!';
+    //echo 'Message sent!';
     //Section 2: IMAP
     //Uncomment these to save your message in the 'Sent Mail' folder.
     #if (save_mail($mail)) {

@@ -17,11 +17,42 @@
             <ul class="flex flex-row gap-4">
 
                 <?php if(isset($_SESSION["id_user"])) { ?>
+
+                    <?php 
+                        require("models/user.php");
+                        $modelUser = new User();
+                        $user = $modelUser->getUser($_SESSION["id_user"]);
+                    ?>
+
+                    <?php if ( $user["is_admin"] ) { ?>
+
+                        <li>
+                            <a class="hover:underline"
+                            href="<?= ROOT ?>/admin_area/">
+                                <i class="fa-solid fa-table"></i>
+                                Admin. area
+                            </a>
+                        </li>
+
+                       
+                    <?php } ?>
+
+                    <li>
+                        <a class="hover:underline"
+                        href="<?= ROOT ?>/profile/" >          
+                            <i class="fa-solid fa-user"></i>
+                            Welcome, <?= $user["name"] ?>
+                        </a>
+                    </li>
+
                     <li>
                         <a href="<?= ROOT ?>/logout/" class="hover:underline" >
                         <i class="fa-solid fa-right-from-bracket"></i> Logout
                         </a>
                     </li>
+
+                  
+
                 <?php } else { ?>
                 
                     <li>

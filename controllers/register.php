@@ -55,7 +55,7 @@ if (isset ($_POST["register-user"])) {
             $createdUser = $modelUser->createUser($_POST);
 
             $id_user = $createdUser["id_user"];
-            $_SESSION["id_user"] = $id_user;
+            //$_SESSION["id_user"] = $id_user;
             $activation_key =  $createdUser["activation_key"];
             
 
