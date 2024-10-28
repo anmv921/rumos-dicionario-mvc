@@ -16,6 +16,8 @@ if ( isset($_GET["search-word"] ) && strlen(trim($_GET["search-word"])) !== 0 ) 
 
     $word = $modelWord->searchWord($_GET["search-word"]);
 
+    // TODO error message
+
     $definitions = $modelDefinition->getDefinitions($word["id_word"]);
 
     $i = 0;

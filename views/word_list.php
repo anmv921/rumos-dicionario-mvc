@@ -32,6 +32,16 @@
                     <i class="fa-solid fa-pencil"></i>
                 </a>
             </h1>
+            
+            <div>
+                <button type="button">
+                    <a 
+                    href="<?= ROOT ?>/word_lists">
+                        &larr; Back to lists
+                    </a>
+                </button>
+            </div>
+          
 
             <?php foreach ( $list as $list_item ) { ?>
                 
@@ -42,7 +52,11 @@
                             <a href="<?= ROOT ?>/word/?search-word=<?= $list_item["Word"] ?>">
                             <?= $list_item["Word"] ?> 
                             </a>
-                        </span><i class="fa-solid fa-trash"></i>
+                        </span><a 
+                        href="<?= ROOT ?>/delete_word_from_list/word/<?= 
+                        $list_item["id_word"] ?>/list/<?= $list_item["id_list"] ?>">
+                        <i class="fa-solid fa-trash"></i>
+                        </a>
                     </h2>
                   
                 </article>
@@ -60,7 +74,7 @@
 
 
 
-    <?php require ("templates/footer.php"); ?>
+    <!-- <?php require ("templates/footer.php"); ?> -->
 
 </body>
 </html>

@@ -17,8 +17,8 @@ class Word extends Base {
                 word.Word LIKE ?
         ");
         $query->execute([ 
-            "%" . $in_word  . "%",
-            $in_word 
+            $in_word,
+            "'%" . $in_word  . "%'"
         ]);
         return $query->fetch();
     } // End function searchWord

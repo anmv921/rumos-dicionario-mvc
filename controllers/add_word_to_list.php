@@ -10,6 +10,7 @@ if ($list == false) {
   
     $modelWordList->insertWordIntoList( trim($_POST["id_word"]), trim($_POST["id_list"]) );
     $message = "Insert ok";
+    header("location:". ROOT . "/word_list/" . trim($_POST["id_list"]) );
 } else {
     $message = "Word already in list";
 }

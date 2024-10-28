@@ -130,5 +130,33 @@ class WordList extends Base {
 
     } // End function editListName
 
+    public function deleteList($in_id) {
+        $query = $this->db->prepare("
+            DELETE 
+            FROM 
+                word_list 
+            WHERE 
+                word_list.id_list = ?
+        ");
+
+        return $query->execute([ $in_id ]);
+    } // End function deleteList
+
+    public function deleteWordFromList( $in_id_list, $in_id_word ) {
+        $query = $this->db->prepare("
+            DELETE FROM 
+                word_list_has_word 
+            WHERE 
+                word_list_has_word.id_list = ?
+            AND 
+                word_list_has_word.id_word = ?
+        ");
+
+        return $query->execute([ $in_id_list, $in_id_word ]);
+
+
+    } // End function deleteWordFromList
+
+    
 
 } // End class

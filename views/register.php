@@ -32,7 +32,8 @@
         </div>
 
         <div>
-            <a href="/" class="hover:border-b-2 hover:border-gray-500 hover:border-dotted">
+            <a href="/" 
+            class="hover:border-b-2 hover:border-gray-500 hover:border-dotted">
                 &larr; Go back
             </a>
         </div>
@@ -106,17 +107,12 @@
             </div>
         <?php } ?> 
 
-
     </fieldset>
 
 </form>
     </main>
 
-
-    <?php require ("templates/footer.php"); ?>
-
-   
-
+    <!-- <?php require ("templates/footer.php"); ?> -->
 
 </body>
 </html>

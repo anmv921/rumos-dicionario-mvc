@@ -48,12 +48,11 @@ table {
     font-weight: bold;
   }
 
-
   .word_list {
     margin: 0.5rem;
     padding: 0.5rem;
     background-color: white;
-    height: 10rem;
+    height: 70%;
   }
   
   .forecast > h1,
@@ -61,7 +60,6 @@ table {
     margin: 1rem;
     padding: 0.3rem;
     font-size: 1.2rem;
-
   }
   
   .word_list_item {
@@ -73,7 +71,6 @@ table {
     margin: 0.2rem;
     font-size: 1rem;
   }
-
 
   ::backdrop {
     background-color: aliceblue;
