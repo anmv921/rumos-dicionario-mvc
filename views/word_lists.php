@@ -39,9 +39,11 @@
         <?php foreach ($myLists as $myList) { ?>
             <li>
                 <a href="<?= ROOT ?>/word_list/<?= $myList["id_list"] ?>">
-                <i class="fa-solid fa-list"></i> <?= ucfirst($myList["list_name"]) ?> 
+                    <i class="fa-solid fa-list"></i> <?= ucfirst($myList["list_name"]) ?> 
                 </a>
-                <i class="fa-solid fa-trash"></i>
+                <a href="<?= ROOT ?>/delete_list/<?= $myList["id_list"] ?>">
+                    <i class="fa-solid fa-trash"></i>
+                </a>
             </li>
         <?php } ?>
     </ul>
@@ -64,7 +66,7 @@
     </ul>
     </main>
 
-    <?php require ("templates/footer.php"); ?>
+    <!-- <?php require ("templates/footer.php"); ?> -->
 
 </body>
 </html>
