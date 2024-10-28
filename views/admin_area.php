@@ -77,7 +77,7 @@
         } else {
           echo '<i class="fa-solid fa-x"></i>';
         }
-        ?>
+    ?>
       
     </td>
 

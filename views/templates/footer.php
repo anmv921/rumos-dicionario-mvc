@@ -1,4 +1,4 @@
-<footer>
+<footer class="absolute bottom-0 left-0 w-screen">
         <section 
         class="flex flex-row gap-10 p-7 bg-sky-600 text-white font-semibold">
             <ul class="p-7" >

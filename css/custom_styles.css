@@ -3,6 +3,10 @@
     list-style-position: inside;
 }
 
+.ul-no-discs {
+  list-style-type: none;
+}
+
 table {
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
@@ -42,4 +46,36 @@ table {
   
   tfoot td {
     font-weight: bold;
+  }
+
+
+  .word_list {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: white;
+    height: 10rem;
+  }
+  
+  .forecast > h1,
+  .word_list_item {
+    margin: 1rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+
+  }
+  
+  .word_list_item {
+    background: #eee;
+  }
+  
+  .word_list_item > h2,
+  .word_list_item > p {
+    margin: 0.2rem;
+    font-size: 1rem;
+  }
+
+
+  ::backdrop {
+    background-color: aliceblue;
+    opacity: 0.75;
   }

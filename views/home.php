@@ -65,7 +65,7 @@
                     </div>
 
                     <div>
-                        <?php require ("templates/word_lists.php"); ?>
+                        <?php require ("templates/word_lists_link.php"); ?>
                     </div>
                 </div>
                 
@@ -252,7 +252,7 @@
         
     </main>
 
-    <?php require ("templates/footer.php"); ?>
+    <!-- <?php require ("templates/footer.php"); ?> -->
 
     
 </body>

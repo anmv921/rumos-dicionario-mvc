@@ -1,11 +1,13 @@
 <?php
 
 require("models/word.php");
-require("models/definition.php");
-
 $modelWord = new Word();
+
+require("models/definition.php");
 $modelDefinition = new Definition();
 
+require("models/word_lists.php");
+$modelWordList = new WordList();
 
 if ( isset($_GET["search-word"] ) && strlen(trim($_GET["search-word"])) !== 0 )  {
 
@@ -30,6 +32,10 @@ if ( isset($_GET["search-word"] ) && strlen(trim($_GET["search-word"])) !== 0 ) 
         }
 
         $i++;
+    } // End foreach $definitions
+
+    if(isset($_SESSION["id_user"])) {
+        $myLists = $modelWordList->getUserLists($_SESSION["id_user"]);
     }
 
     require("views/word.php");

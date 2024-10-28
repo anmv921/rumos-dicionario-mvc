@@ -14,7 +14,7 @@ class User extends Base {
             $query->execute(  );
     
             return $query->fetchAll();
-    } // End function 
+    } // End function getUsers
 
     public function getUser( $in_id ) {
         $query = $this->db->prepare("

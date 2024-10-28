@@ -8,7 +8,7 @@
                     </li>
 
                     <li class="hover:underline">
-                        <a href="/">
+                        <a href="<?= ROOT ?>/">
                             Dictionary
                         </a>
                     </li>
