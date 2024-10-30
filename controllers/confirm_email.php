@@ -12,8 +12,6 @@ $activation_key = $url_parts[5];
 
 $user = $modelUser->getUser($id_user);
 
-
-
 if ( !empty($user) && trim($user["activation_key"]) == trim($activation_key) ) {
     $modelUser->activateUser($id_user);
     $bool_success = true;

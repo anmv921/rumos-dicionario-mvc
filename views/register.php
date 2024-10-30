@@ -38,6 +38,8 @@
             </a>
         </div>
 
+        <input type="hidden" name="token" value="<?= $_SESSION['token'] ?? '' ?>">
+
         <div>
             <input 
             class="border-solid px-2 border-gray-500 w-64

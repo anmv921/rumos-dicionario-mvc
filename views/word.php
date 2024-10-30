@@ -42,34 +42,36 @@
             <form method="POST" id="form-add-word-to-list"
             action="<?= ROOT ?>/add_word_to_list/" class="p-3">
 
-            <input type="hidden" name="id_word" value="<?= $word["id_word"] ?>">
+                <input type="hidden" name="id_word" value="<?= $word["id_word"] ?>">
+
+                <input type="hidden" name="token" value="<?= $_SESSION['token'] ?? '' ?>">
             
-            <p class="p-3" >
-                <label>
-                    Select word list:
+                <p class="p-3" >
+                    <label>
+                        Select word list:
 
-                    <select name="id_list" class="border-solid rounded-md
-                     border-black border-2"
-                    form="form-add-word-to-list" >
-                        <?php foreach ( $myLists as $list ) { ?>
-                            
-                            <option 
-                            value="<?= $list["id_list"] ?>" >
-                                <?= $list["list_name"] ?>
-                            </option>
-                            
-                        <?php } ?>
-                    </select>
-                </label>
-            </p>
+                        <select name="id_list" class="border-solid rounded-md
+                        border-black border-2"
+                        form="form-add-word-to-list" >
+                            <?php foreach ( $myLists as $list ) { ?>
+                                
+                                <option 
+                                value="<?= $list["id_list"] ?>" >
+                                    <?= $list["list_name"] ?>
+                                </option>
+                                
+                            <?php } ?>
+                        </select>
+                    </label>
+                </p>
 
-            <p class="flex flex-row justify-center" >
-            <button class="border-solid border-black hover:bg-slate-100
-            border-2 rounded-md px-2"
-            type="submit" >
-                Add word to list
-            </button>
-            </p>
+                <p class="flex flex-row justify-center" >
+                    <button class="border-solid border-black hover:bg-slate-100
+                    border-2 rounded-md px-2"
+                    type="submit" name="add-word-to-list">
+                        Add word to list
+                    </button>
+                </p>
 
             </form>
         </section>

@@ -1,5 +1,7 @@
 <?php
 
+// TODO csrf token?
+
 require("models/word_lists.php");
 $modelList = new WordList();
 

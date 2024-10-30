@@ -8,16 +8,16 @@
 <body>
     <form action="<?= ROOT ?>/edit_list_name/" method="POST" >
 
-    
-
+        
         <h1>
             Edit list name
         </h1>
-
+        
         <h2>
             <?= $list["list_name"] ?? "" ?>
         </h2>
-
+        
+        <input type="hidden" name="token" value="<?= $_SESSION['token'] ?? '' ?>">
 
         <label for="new_name">New name:</label>
         <input type="text" id="new_name" name="new_name" >

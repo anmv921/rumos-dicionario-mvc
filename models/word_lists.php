@@ -4,6 +4,19 @@ require_once("base.php");
 
 class WordList extends Base {
 
+    public function createList($in_name, $in_id_user) {
+
+        $query = $this->db->prepare("
+            INSERT INTO 
+            word_list
+            ( list_name, is_public, id_user ) 
+            VALUES 
+            ( ?, 0 , ? )
+        ");
+
+        return $query->execute([ $in_name, $in_id_user ]);
+    } // End function createList
+
     public function getLists() {
         $query = $this->db->prepare("
                 SELECT 

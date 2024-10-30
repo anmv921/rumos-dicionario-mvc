@@ -34,6 +34,16 @@
 
     <hr>
 
+    <div>
+        <button type="button" 
+        class="bg-yellow-400 hover:bg-yellow-500
+        rounded-xl px-3 my-3 font-bold">
+            <a href="<?= ROOT ?>/create_word_list/">
+                Create a new list
+            </a>
+        </button>
+    </div>
+
     <ul class="ul-no-discs" >
         <!-- Todo limit to like 5 and do a separate page with paginations -->
         <?php foreach ($myLists as $myList) { ?>

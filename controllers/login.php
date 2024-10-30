@@ -13,6 +13,12 @@ if ( isset( $_POST["submit-login"] ) ) {
         $_POST[ $key ] = htmlspecialchars( strip_tags( trim( $value ) ) );
     }
 
+    if (!$token || $token !== $_SESSION['token']) {
+        echo '<p class="error">Error: invalid form submission</p>';
+        header($_SERVER['SERVER_PROTOCOL'] . ' 405 Method Not Allowed');
+        exit;
+    }
+
     // Validations
     if ( 
         empty($_POST["email"]) |
