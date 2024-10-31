@@ -20,31 +20,40 @@
     <?php require ("templates/header.php"); ?>
 
     <form action="<?= ROOT ?>/create_word_list/" 
-    method="POST">
+    method="POST" class="p-3">
 
         <input type="hidden" name="token" value="<?= $_SESSION['token'] ?? '' ?>">
 
         <div>
             <label for="name">List name:</label>
-            <input type="text" id="name" name="name" >
+            <input type="text" id="name" name="name"
+            class="border-solid border-2 rounded-lg px-3" >
         </div>
 
         <div>
-            <button type="submit" name="create_list">
+            <button type="submit" name="create_list"
+            class="bg-yellow-400 hover:bg-yellow-500
+            rounded-xl px-3 my-3 font-bold" >
                 Create list
             </button>
         </div>
 
         
-        <?php if( isset( $arr_errors ) ) { ?>
+        <?php if( isset( $arr_errors ) 
+        && empty($arr_errors == false)
+        && count($arr_errors) > 0 ) { ?>
+            <ul>
+         
+
                 <div class="w-4/8 m-auto text-center">
                     <?php foreach($arr_errors as $error) { ?>
                         <li class="text-red-500 list list-none" >
                             <?php echo $error ?> 
                         </li>
-                    <?php } ?>
+                        <?php } ?>
+                    </div>
                 </div>
-            </div>
+            </ul>
         <?php } ?>
 
     </form>

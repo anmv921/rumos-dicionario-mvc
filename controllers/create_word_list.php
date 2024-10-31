@@ -3,6 +3,9 @@
 require("models/word_lists.php");
 $modelList = new WordList();
 
+$arr_errors = [];
+$bool_validationError = false;
+
 if( isset($_SESSION["id_user"]) ) {
 
     if (isset ($_POST["create_list"])) {
@@ -10,6 +13,9 @@ if( isset($_SESSION["id_user"]) ) {
         foreach( $_POST as $key => $value ) {
             $_POST[ $key ] = htmlspecialchars( strip_tags( trim( $value ) ) );
         }
+
+        $token = $_POST["token"];
+
 
         if (!$token || $token !== $_SESSION['token']) {
             echo '<p class="error">Error: invalid form submission</p>';
@@ -27,7 +33,7 @@ if( isset($_SESSION["id_user"]) ) {
             $bool_validationError = true;
         }
 
-        if ($bool_validationError) {
+        if ($bool_validationError == false) {
             $modelList->createList($_POST["name"], $_SESSION["id_user"]);
             header("location:". ROOT . "/word_lists");
         }

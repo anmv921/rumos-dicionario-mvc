@@ -2,7 +2,9 @@
 session_start();
 
 // Token for csrf defense
-$_SESSION["token"] = bin2hex(random_bytes(35));
+if ( empty($_SESSION["token"]) ) {
+    $_SESSION["token"] = bin2hex(random_bytes(35));
+}
 
 define("ENV", parse_ini_file(".env") );
 define("ROOT", "");
