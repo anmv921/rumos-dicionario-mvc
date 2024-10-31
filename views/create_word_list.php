@@ -56,6 +56,16 @@
             </ul>
         <?php } ?>
 
+
+        <div>
+                <button type="button">
+                    <a 
+                    href="<?= ROOT ?>/word_lists">
+                        &larr; Back to lists
+                    </a>
+                </button>
+            </div>
+
     </form>
 </body>
 </html>

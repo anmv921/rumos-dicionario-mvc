@@ -32,9 +32,18 @@ if( isset($_SESSION["id_user"]) ) {
         ) {
             $arr_errors[] = "Invalid list name";
             $bool_validationError = true;
+        } else {
+            $existingList = $modelList->getListByName( $_POST["name"], $_SESSION["id_user"] );
+
+            if ($existingList != false) {
+
+                $arr_errors[] = "A list with this name already exists";
+                $bool_validationError = true;
+            }
+
         }
 
-        if ($bool_validationError == false) {
+        if ($bool_validationError == false ) {
             $modelList->createList($_POST["name"], $_SESSION["id_user"]);
             $bool_list_creation_ok = true;
 

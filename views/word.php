@@ -30,15 +30,13 @@
 
     <dialog id="dialog-add-to-list" class="border-solid
     border-black border-2" >
-
         <section class="p-3" >
-
             <div class="flex flex-row justify-end">
                 <button autofocus  >
                     <i class="fa-solid fa-x"></i>
                 </button>
             </div>
-          
+    
             <form method="POST" id="form-add-word-to-list"
             action="<?= ROOT ?>/add_word_to_list/" class="p-3">
 

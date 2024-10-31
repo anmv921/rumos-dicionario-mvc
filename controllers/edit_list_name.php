@@ -34,7 +34,8 @@ if(isset ($_POST["edit-list"])) {
     // TODO check if the update was ok by getting the list name
 
     $bool_update_ok = true;
-    
+    $_SESSION["list_update_ok"] = true;
+
     header("location:". ROOT . "/edit_list_name/" . $_POST["id_list"]);
 
     

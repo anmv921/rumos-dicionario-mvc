@@ -1,5 +1,5 @@
 
-<header>
+<header class="w-screen bg-sky-600 ">
         <nav class="flex flex-row justify-between bg-sky-600 
         text-white font-semibold p-7" >
             <ul class="flex flex-row gap-4" >

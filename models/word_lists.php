@@ -63,23 +63,24 @@ class WordList extends Base {
     public function getListInfo( $in_id ) {
         $query = $this->db->prepare("
                 SELECT 
-                    word_list_has_word.id_list, 
+                    word_list.id_list, 
                     word_list_has_word.id_word, 
                     word_list.list_name, 
-                    word_list.is_public,
-                    word_list.id_user, word.Word
+                    word_list.is_public, 
+                    word_list.id_user, 
+                    word.Word
                 FROM 
-                    word_list_has_word
+                    word_list 
                 LEFT JOIN 
-                    word_list
-                ON
-                    word_list.id_list = word_list_has_word.id_list
+                    word_list_has_word 
+                ON 
+                    word_list_has_word.id_list = word_list.id_list 
                 LEFT JOIN 
-                    word
-                ON
-                    word_list_has_word.id_word = word.id_word
-                WHERE
-                    word_list_has_word.id_list = ?
+                    word 
+                ON 
+                    word.id_word = word_list_has_word.id_word 
+                WHERE 
+                    word_list.id_list = ?;
             ");
     
             $query->execute([$in_id]);
@@ -101,6 +102,22 @@ class WordList extends Base {
         return $query->fetch();
 
     } // End function getListInfo
+
+    public function getListByName($in_name, $in_id_user) {
+        $query = $this->db->prepare("
+            SELECT
+                id_list, list_name, id_user
+            FROM
+                word_list
+            WHERE
+                list_name = ? AND id_user = ?
+        ");
+
+        $query->execute([$in_name, $in_id_user]);
+
+        return $query->fetch();
+
+    }
 
     public function getListWord( $in_id_list, $in_id_word ) {
         $query = $this->db->prepare("

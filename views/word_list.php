@@ -44,7 +44,7 @@
                 </button>
             </div>
             <?php 
-            if ( count($list) > 0 ) {
+            if ( count($list) > 0 && $list[0]["Word"] != "" ) {
             foreach ( $list as $list_item ) { 
             ?>
                 <article class="word_list_item" >
