@@ -60,7 +60,7 @@ class WordList extends Base {
             return $query->fetchAll();
     } // End function getPublicLists
 
-    public function getList( $in_id ) {
+    public function getListInfo( $in_id ) {
         $query = $this->db->prepare("
                 SELECT 
                     word_list_has_word.id_list, 
@@ -87,7 +87,7 @@ class WordList extends Base {
             return $query->fetchAll();
     } // End function getList
 
-    public function getListInfo($in_id) {
+    public function getList($in_id) {
         $query = $this->db->prepare("
             SELECT
                 id_list, list_name

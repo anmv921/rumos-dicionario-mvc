@@ -19,12 +19,22 @@
     <?php require ("templates/header.php"); ?>
     <main  class="relative overflow-y-scroll" >
         <article class="word_list">
-            <h1 class="uppercase text-2xl" >
-                <?= $list[0]["list_name"] ?> <a 
-                href="<?= ROOT ?>/edit_list_name/<?= $list[0]["id_list"] ?>">
-                    <i class="fa-solid fa-pencil"></i>
-                </a>
-            </h1>
+
+            <?php if( count($list) > 0 ) { ?>
+
+                
+
+                <h1 class="uppercase text-2xl" >
+                    <?= $list[0]["list_name"] ?> <a 
+                    href="<?= ROOT ?>/edit_list_name/<?= $list[0]["id_list"] ?>">
+                        <i class="fa-solid fa-pencil"></i>
+                    </a>
+                </h1>
+
+            <?php } else { ?>
+                <div class="text-yellow-400" >List is empty</div>
+            <?php } ?>
+
             <div>
                 <button type="button">
                     <a 
@@ -33,7 +43,10 @@
                     </a>
                 </button>
             </div>
-            <?php foreach ( $list as $list_item ) { ?>
+            <?php 
+            if ( count($list) > 0 ) {
+            foreach ( $list as $list_item ) { 
+            ?>
                 <article class="word_list_item" >
                     <h2 >
                         <span class="capitalize" >
@@ -47,7 +60,10 @@
                         </a>
                     </h2>
                 </article>
-            <?php } ?>
+            <?php 
+            } // End foreach 
+            } // End if 
+            ?>
         </article>
     </main>
     <!-- <?php require ("templates/footer.php"); ?> -->

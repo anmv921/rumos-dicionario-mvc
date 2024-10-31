@@ -9,7 +9,7 @@ $url_parts = explode("/", $_SERVER["REQUEST_URI"]);
 
 $id_list = $url_parts[2];
 
-$list = $modelWordList->getListInfo($id_list); 
+$list = $modelWordList->getList($id_list); 
 
 $bool_update_ok = false;
 

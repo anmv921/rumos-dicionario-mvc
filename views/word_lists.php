@@ -73,7 +73,28 @@
           
             </li>
         <?php } ?>
+        
+        
+
     </ul>
+
+
+    
+    <?php
+    if( isset($_SESSION["list_creation_ok"]) &&
+    $_SESSION["list_creation_ok"] ) { 
+    ?>
+        <hr>
+        <div class="text-green-500" >
+            List creation ok
+        </div>
+
+    <?php
+    // unset the variable
+    $_SESSION["list_creation_ok"] = false; 
+    } ?>
+
+
     </main>
 
     <!-- <?php require ("templates/footer.php"); ?> -->

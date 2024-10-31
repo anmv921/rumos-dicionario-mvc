@@ -5,6 +5,7 @@ $modelList = new WordList();
 
 $arr_errors = [];
 $bool_validationError = false;
+$bool_list_creation_ok = false;
 
 if( isset($_SESSION["id_user"]) ) {
 
@@ -35,6 +36,10 @@ if( isset($_SESSION["id_user"]) ) {
 
         if ($bool_validationError == false) {
             $modelList->createList($_POST["name"], $_SESSION["id_user"]);
+            $bool_list_creation_ok = true;
+
+            $_SESSION["list_creation_ok"] = true;
+
             header("location:". ROOT . "/word_lists");
         }
     

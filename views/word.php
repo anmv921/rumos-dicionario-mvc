@@ -78,6 +78,15 @@
     </dialog>
 
 
+    
+    <?php if($bool_search_error) {
+
+        
+
+        http_response_code(404);
+        echo '<div class="text-red-500 m-3">'.$message.'</div>';
+    } else {
+    ?>
    
     <article class="w-2/3" >
         <h1 class="px-7 py-3 italic" >
@@ -154,6 +163,8 @@
             </article>
         <?php } ?>
     </article>
+
+    <?php } //End else ?>
     
     <script src="/js/scripts.js"></script>
     
