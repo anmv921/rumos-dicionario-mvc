@@ -21,6 +21,7 @@
     <?php require ("templates/header.php"); ?>
 
     <main>
+        
     <form action="<?= ROOT ?>/register/" method="POST" >
 
     <fieldset class="flex flex-col items-center py-10 gap-5 bg-gray-100">
@@ -115,6 +116,9 @@
     </main>
 
     <!-- <?php require ("templates/footer.php"); ?> -->
+
+    <?php require ("views/templates/sidebar.php"); ?>
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>

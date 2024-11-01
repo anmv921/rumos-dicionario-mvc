@@ -90,6 +90,7 @@
 
 
         <td>
+        <a href="<?= ROOT ?>/update_user_info/<?= $user["id_user"]; ?>" >
           <?php
             if ( $user["is_admin"]  ) {
               echo '<i class="fa-solid fa-check"></i>';
@@ -97,18 +98,20 @@
               echo '<i class="fa-solid fa-x"></i>';
             }
           ?>
+             </a>
         </td>
 
         <td>
-
+        <a href="<?= ROOT ?>/update_user_info/<?= $user["id_user"]; ?>" >
         <?php
+   
           if ( $user["is_active"]  ) {
               echo '<i class="fa-solid fa-check"></i>';
             } else {
               echo '<i class="fa-solid fa-x"></i>';
             }
         ?>
-          
+          </a>
         </td>
 
         <td>
@@ -145,6 +148,9 @@
         </div>
 
     </main>
+
+    <?php require ("views/templates/sidebar.php"); ?>
+    <script src="/js/scripts.js"></script>
 
 </body>
 </html>

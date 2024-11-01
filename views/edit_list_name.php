@@ -20,59 +20,69 @@
 <body>
     <?php require ("templates/header.php"); ?>  
 
-    <div>
-    <form action="<?= ROOT ?>/edit_list_name/" method="POST" class="p-3" >
+    <main>
+
 
         
+        
+        
+        
+        <div>
+            <form action="<?= ROOT ?>/edit_list_name/" method="POST" class="p-3" >
+                
+                
 
         <h1 class="text-xl font-bold">
             Edit list name
         </h1>
-
+        
         <h2 class="text-lg font-semibold" >
             <?= $list["list_name"] ?? "" ?>
         </h2>
-
+        
         <input type="hidden" name="token" value="<?= $_SESSION['token'] ?? '' ?>">
-
+        
         <label for="new_name">New name:</label>
         <input class="border-2 rounded-lg"
         type="text" id="new_name" name="new_name" >
-
+        
         <input type="hidden" name="id_list" value="<?= $id_list ?>">
-
+        
         <button class="bg-yellow-400 hover:bg-yellow-500 uppercase
         px-3 rounded-lg"
         type="submit" name="edit-list" >
-            save
-        </button>
+        save
+    </button>
+    
+    <?php 
 
-        <?php 
-
-        if( isset( $_SESSION["list_update_ok"]) &&
-        $_SESSION["list_update_ok"] ) { 
-        ?> 
+if( isset( $_SESSION["list_update_ok"]) &&
+$_SESSION["list_update_ok"] ) { 
+    ?> 
             <div>
                 Update OK
             </div>
         <?php 
         $_SESSION["list_update_ok"] = false;
-        }
+    }
 
-        ?>
+    ?>
         
         <div>
-        <button type="button" class="p-3" >
+            <button type="button" class="p-3" >
                 <a href="<?= ROOT ?>/word_lists">&larr; Back to lists</a>
                 
             </button>
         </div>
+        
+        
+    </form>
+</div>
 
+</main>
 
-        </form>
-    </div>
-    
-
+<?php require ("views/templates/sidebar.php"); ?>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>

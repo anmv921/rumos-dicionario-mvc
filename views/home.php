@@ -13,12 +13,21 @@
     <link rel="stylesheet" href="css/tailwind_style.css" >
 
     <link rel="icon" type="image/x-icon" href="images/bolt-lightning-solid.svg">
+
+    <link rel="stylesheet" href="css/custom_styles.css" >
 </head>
 <body class="font-roboto" >
+
+    
     
     <?php require ("templates/header.php"); ?>
-        
+
+    
+
+    
     <main>
+
+    
         
         <section class="flex flex-row justify-between p-7
         bg-gradient-to-r from-cyan-500 to-blue-500 mb-20" >
@@ -254,6 +263,7 @@
 
     <!-- <?php require ("templates/footer.php"); ?> -->
 
-    
+    <?php require ("views/templates/sidebar.php"); ?>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

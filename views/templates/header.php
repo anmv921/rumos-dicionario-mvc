@@ -3,7 +3,8 @@
         <nav class="flex flex-row justify-between bg-sky-600 
         text-white font-semibold p-7" >
             <ul class="flex flex-row gap-4" >
-                    <li class="cursor-pointer">
+
+                    <li class="cursor-pointer" onclick="openNav()" >
                         <i class="fa-solid fa-bars"></i>
                     </li>
 

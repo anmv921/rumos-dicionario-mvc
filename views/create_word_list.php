@@ -19,6 +19,7 @@
 
     <?php require ("templates/header.php"); ?>
 
+    <main>
     <form action="<?= ROOT ?>/create_word_list/" 
     method="POST" class="p-3">
 
@@ -67,5 +68,12 @@
             </div>
 
     </form>
+
+    </main>
+
+  
+
+    <?php require ("views/templates/sidebar.php"); ?>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

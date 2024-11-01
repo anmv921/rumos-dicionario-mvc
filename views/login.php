@@ -93,5 +93,8 @@
 
     <!-- <?php require ("templates/footer.php"); ?> -->
 
+    <?php require ("views/templates/sidebar.php"); ?>
+    <script src="js/scripts.js"></script>
+
 </body>
 </html>

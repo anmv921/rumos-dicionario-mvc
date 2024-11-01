@@ -16,7 +16,11 @@
     href="../css/custom_styles.css" >
 </head>
 <body>
+
+
     <?php require ("templates/header.php"); ?>
+
+
     <main  class="relative overflow-y-scroll" >
         <article class="word_list">
 
@@ -67,5 +71,8 @@
         </article>
     </main>
     <!-- <?php require ("templates/footer.php"); ?> -->
+
+    <?php require ("views/templates/sidebar.php"); ?>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>
