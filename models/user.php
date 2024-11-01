@@ -88,5 +88,39 @@ class User extends Base {
          return $query->execute([ $in_id ]);
     } // End function activateUser
 
+    public function updateUserInfo(
+        $in_id, $in_new_name, $in_new_email, $in_active, $in_admin) {
+
+        $query = $this->db->prepare("
+            UPDATE 
+                user
+            SET 
+                is_active = ?,
+                is_admin = ?,
+                name = ?,
+                email = ?
+            WHERE 
+                id_user = ?
+         ");
+
+        return $query->execute([ 
+            $in_active,
+            $in_admin,
+            $in_new_name,
+            $in_new_email,
+            $in_id 
+        ]);
+    } // End function updateUserInfo
+
+    public function deleteUser($in_id) {
+        $query = $this->db->prepare("
+            DELETE FROM 
+                user 
+            WHERE 
+                user.id_user = ?
+        ");
+        return $query->execute([$in_id]);
+    } // End function deleteUser
+
 } // End class
 

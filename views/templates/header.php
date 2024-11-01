@@ -19,12 +19,12 @@
                 <?php if(isset($_SESSION["id_user"])) { ?>
 
                     <?php 
-                        require("models/user.php");
+                        require_once("models/user.php");
                         $modelUser = new User();
-                        $user = $modelUser->getUser($_SESSION["id_user"]);
+                        $logged_user = $modelUser->getUser($_SESSION["id_user"]);
                     ?>
 
-                    <?php if ( $user["is_admin"] ) { ?>
+                    <?php if ( $logged_user["is_admin"] ) { ?>
 
                         <li>
                             <a class="hover:underline"
@@ -41,7 +41,7 @@
                         <a class="hover:underline"
                         href="<?= ROOT ?>/profile/" >          
                             <i class="fa-solid fa-user"></i>
-                            Welcome, <?= $user["name"] ?>
+                            Welcome, <?= $logged_user["name"] ?>
                         </a>
                     </li>
 

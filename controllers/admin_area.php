@@ -1,6 +1,6 @@
 <?php
 
-require("models/user.php");
+require_once("models/user.php");
 $modelUser = new User();
 
 $users = $modelUser->getUsers();

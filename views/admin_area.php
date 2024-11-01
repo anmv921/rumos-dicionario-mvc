@@ -18,78 +18,133 @@
 
 </head>
 <body>
-    <h1 class="p-5 text-5xl bold" >
-        Admin Area
-    </h1>
 
-    <h2 class="p-5 text-2xl bold" >
-      Users
-    </h2>
+  <?php require ("templates/header.php"); ?>
 
-    <div class="p-5" >
-    <table class="table-auto" >
-
-<thead>
-  <tr>
-    <th>id_user</th>
-    <th>name</th>
-    <th>email</th>
-    <th>is_admin</th>
-    <th>is_active</th>
-  </tr>
-</thead>
-
-<tbody>
+  <main>
 
 
-<?php foreach ( $users as $user ) { ?>
+        <h1 class="m-3 text-5xl bold" >
+            Admin Area
+        </h1>
 
-  <tr>
-  
-    <td>
-      <?= $user["id_user"] ?>
-    </td>
-  
-    <td>
-      <?= $user["name"] ?>
-    </td>
+        <h2 class="m-3 text-2xl bold" >
+          Users
+        </h2>
 
-    <td>
-      <?= $user["email"] ?>
-    </td>
+        <?php if($_SESSION["user_update_ok"] ?? false) {
+          echo '<div class="text-green-500 m-3">User update ok</div>';
+          $_SESSION["user_update_ok"] = false;
+        } ?>
 
+  <?php if($_SESSION["user_delete_ok"] ?? false) {
+          echo '<div class="text-green-500 m-3">User deletion ok</div>';
+          $_SESSION["user_delete_ok"] = false;
+        } ?>
 
-    <td>
-      <?php
-        if ( $user["is_admin"]  ) {
-          echo '<i class="fa-solid fa-check"></i>';
-        } else {
-          echo '<i class="fa-solid fa-x"></i>';
-        }
-      ?>
-    </td>
+        <div class="m-3" >
+        <table class="table-auto" >
 
-    <td>
+    <thead>
+      <tr>
+        <th>id_user</th>
+        <th>name</th>
+        <th>email</th>
+        <th>is_admin</th>
+        <th>is_active</th>
+        <th>delete</th>
+        <th>activate/deactivate</th>
+        <th>toggle admin rights</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
 
     <?php
-      if ( $user["is_active"]  ) {
-          echo '<i class="fa-solid fa-check"></i>';
-        } else {
-          echo '<i class="fa-solid fa-x"></i>';
-        }
+      foreach ( $users as $user ) { 
+      if ( isset($user["id_user"] ) &&
+       $user["id_user"] != $_SESSION["id_user"] ) {  
     ?>
+
+      <tr>
       
-    </td>
+        <td>
+          <?= $user["id_user"] ?>
+        </td>
+      
+        <td>
+          <?= $user["name"] ?> 
+          <a href="<?= ROOT ?>/update_user_info/<?= $user["id_user"]; ?>" >
+            <i class="fa-solid fa-pencil"></i>
+          </a>
+        </td>
 
-  </tr>
+        <td>
+          <?= $user["email"] ?>
 
-<?php } ?>
+          <a href="<?= ROOT ?>/update_user_info/<?= $user["id_user"]; ?>" >
+            <i class="fa-solid fa-pencil"></i>
+          </a>
+        </td>
 
-</tbody>
-</table>
-    </div>
 
-   
+        <td>
+          <?php
+            if ( $user["is_admin"]  ) {
+              echo '<i class="fa-solid fa-check"></i>';
+            } else {
+              echo '<i class="fa-solid fa-x"></i>';
+            }
+          ?>
+        </td>
+
+        <td>
+
+        <?php
+          if ( $user["is_active"]  ) {
+              echo '<i class="fa-solid fa-check"></i>';
+            } else {
+              echo '<i class="fa-solid fa-x"></i>';
+            }
+        ?>
+          
+        </td>
+
+        <td>
+          <a href="<?= ROOT ?>/delete_user/<?= $user["id_user"]; ?>">
+            <i class="fa-solid fa-user-slash"></i>
+          </a>
+        </td>
+
+        <td>
+          <a href="<?= ROOT ?>/update_user_info/<?= $user["id_user"]; ?>" >
+            <?php if ( $user["is_active"]  ) { ?>
+                <i class="fa-solid fa-lock"></i>
+            <?php } else { ?>
+              <i class="fa-solid fa-lock-open"></i>
+            <?php } ?>
+          </a>
+        </td>
+
+        <td>
+          <a href="<?= ROOT ?>/update_user_info/<?= $user["id_user"]; ?>" >
+            <i class="fa-solid fa-user-gear"></i>
+          </a>
+        </td>
+
+      </tr>
+
+    <?php 
+      } // End if
+      } // End for
+    ?>
+
+    </tbody>
+    </table>
+        </div>
+
+    </main>
 
 </body>
 </html>

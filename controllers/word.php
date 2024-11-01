@@ -17,7 +17,7 @@ if ( isset($_GET["search-word"] ) && strlen(trim($_GET["search-word"])) !== 0 ) 
     // Sanitização
     $_GET["search-word"] = htmlspecialchars(strip_tags(trim($_GET["search-word"])));
 
-    $word = $modelWord->searchWord($_GET["search-word"]);
+    $word = $modelWord->searchWord( trim($_GET["search-word"]) );
 
     if ($word==false) {
         $bool_search_error = true;

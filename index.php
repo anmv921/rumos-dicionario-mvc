@@ -21,11 +21,9 @@ if (!empty($url_parts[2])){
     $id = $url_parts[2];
 }
 
-if( !file_exists("controllers/" .$controller. ".php")) {
+if( !file_exists("controllers/" . $controller . ".php")) {
     http_response_code(404);
     die("Not Found");
 }
 
-
-
-require("controllers/" .$controller. ".php");
+require("controllers/" . $controller . ".php");

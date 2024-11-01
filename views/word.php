@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>
-        <?php echo $word["Word"]; ?> | Lightning Dictionary
+        <?php echo $word["Word"] ?? 'Word not found'; ?> | Lightning Dictionary
     </title>
 
     <link rel="stylesheet" 
