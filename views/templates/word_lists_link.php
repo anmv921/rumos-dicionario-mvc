@@ -1,21 +1,20 @@
-<section class="border-solid border-2 border-neutral-100  p-3 my-5 w-1/2">
-<div class="flex flex-col " >
+<section class="border-solid border-2 border-neutral-100">
+    <div class="flex flex-row items-center justify-center text-center" >
 
-    <div class="">
-        <img src="images/blank-792125_1280.jpg" alt="">
-    </div>
+        <div class="m-5 p-5 w-1/2">
+            <img src="images/blank-792125_1280.jpg" alt="">
+        </div>
 
-    <div class="p-3" >
-        <button type="button" 
-        class="bg-sky-600 px-6 text-white py-2
-        hover:bg-sky-700
-        rounded-2xl font-semibold" >
-            <a href="<?= ROOT ?>/word_lists/">
-            Go to word lists
-            </a>
-            
-        </button>
+        <div class="w-1/2 p-5" >
+            <button type="button" 
+            class="bg-sky-600 text-white
+            hover:bg-sky-700 px-5 py-3
+            rounded-2xl font-semibold" >
+                <a href="<?= ROOT ?>/word_lists/">
+                    Go to word lists
+                </a>
+            </button>
+        </div>
+        
     </div>
-    
-</div>
 </section>

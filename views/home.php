@@ -60,13 +60,19 @@
             <!-- /*********** -->
             <!-- * EXPLORE * -->
             <!-- ***********/ -->
-            <section class="m-14 mx-5" >
+            <section class="mx-5 w-1/2" >
 
                 <h1 class="text-3xl my-3" >
                     Explore the Dictionary
                 </h1>
 
-                <div class="flex flex-row gap-5 shrink-0" >
+                <div class="grid grid-cols-1 gap-5">
+                    <?php require ("templates/word_of_the_day.php"); ?>
+                    <?php require ("templates/new_words.php"); ?>
+                    <?php require ("templates/word_lists_link.php"); ?>
+                </div>
+
+                <!-- <div class="flex flex-row gap-5 shrink-0" >
 
                     <div class="w-11/12">
                         <?php require ("templates/word_of_the_day.php"); ?>
@@ -76,7 +82,7 @@
                     <div>
                         <?php require ("templates/word_lists_link.php"); ?>
                     </div>
-                </div>
+                </div> -->
                 
             </section>
 
