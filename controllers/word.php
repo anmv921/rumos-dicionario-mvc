@@ -1,12 +1,12 @@
 <?php
 
-require("models/word.php");
+require_once("models/word.php");
 $modelWord = new Word();
 
-require("models/definition.php");
+require_once("models/definition.php");
 $modelDefinition = new Definition();
 
-require("models/word_lists.php");
+require_once("models/word_lists.php");
 $modelWordList = new WordList();
 
 $message = "";
@@ -42,12 +42,7 @@ if ( isset($_GET["search-word"] ) && strlen(trim($_GET["search-word"])) !== 0 ) 
         if(isset($_SESSION["id_user"])) {
             $myLists = $modelWordList->getUserLists($_SESSION["id_user"]);
         }
-
-
     } // End else
-
-
-
     require("views/word.php");
 } else {
     header("location:" . ROOT . "/");
