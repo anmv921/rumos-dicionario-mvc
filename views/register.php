@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="/css/tailwind_style.css" >
 
     <link rel="icon" type="image/x-icon" href="/images/bolt-lightning-solid.svg">
-
+    
+    <link rel="stylesheet" href="/css/custom_styles.css" >
 </head>
 
 <body >
 
-    <?php require ("templates/header.php"); ?>
+    <?php require ("views/templates/header.php"); ?>
 
     <main>
         
@@ -118,7 +119,7 @@
     <!-- <?php require ("templates/footer.php"); ?> -->
 
     <?php require ("views/templates/sidebar.php"); ?>
-    <script src="js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
 
 </body>
 </html>

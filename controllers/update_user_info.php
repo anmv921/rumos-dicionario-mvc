@@ -9,7 +9,10 @@ $bool_success = false;
 require_once("models/user.php");
 $modelUser = new User();
 
+$logged_user = $modelUser->getUser($_SESSION["id_user"]);
+
 $user_to_update = $modelUser->getUser($id_user_to_update);
+
 $arr_errors = [];
 $bool_validationError = false;
 
@@ -46,16 +49,21 @@ if ( isset( $_POST["update_user_info"] )  ) {
 
     if ( $bool_validationError == false ) {
 
-        $admin = 0;
-       if ( isset($_POST["is_admin"]) && $_POST["is_admin"] =='on' ) {
-            $admin = 1;
-       }
+        if ($logged_user["is_admin"]) {
 
-       
-       $active = 0;
-       if ( isset($_POST["is_active"]) && $_POST["is_active"] =='on' ) {
-            $active = 1;
-       }
+            $admin = 0;
+            if ( isset($_POST["is_admin"]) && $_POST["is_admin"] =='on' ) {
+                $admin = 1;
+            }
+
+            $active = 0;
+            if ( isset($_POST["is_active"]) && $_POST["is_active"] =='on' ) {
+                    $active = 1;
+            }
+        } else {
+            $admin = $logged_user["is_admin"];
+            $active = $logged_user["is_active"];
+        }
 
        $result = $modelUser->updateUserInfo(
         $_POST["id_user_to_update"],
@@ -65,13 +73,18 @@ if ( isset( $_POST["update_user_info"] )  ) {
         $admin
        );
 
-     
-
        $bool_success = true;
 
        $_SESSION["user_update_ok"] = true;
 
-       header("location:" . ROOT . "/admin_area/" );
+
+
+       if ($logged_user["id_user"] == $_POST["id_user_to_update"]) {
+                header("location:" . ROOT . "/profile/" );
+        } else {
+            header("location:" . ROOT . "/admin_area/" );
+        }
+    
     }
 }
 

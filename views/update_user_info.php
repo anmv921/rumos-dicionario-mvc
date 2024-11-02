@@ -41,7 +41,11 @@
         </div>
 
         <div>
-            <a href="<?= ROOT ?>/admin_area/" 
+            <a href="<?php if ( $id_user_to_update == $_SESSION["id_user"]) {
+                echo ROOT . "/profile/";
+            } else {
+                echo ROOT . "/admin_area/";
+            } ?>"
             class="hover:border-b-2 hover:border-gray-500 hover:border-dotted">
                 &larr; Go back
             </a>
@@ -69,18 +73,22 @@
             value="<?= $user_to_update["email"]; ?>"
             type="email" name="new_email" id="new_email" required />
         </div>
+
+        <?php if ($logged_user["is_admin"]) { ?>
         
-        <div>
-        <label for="is_admin">Admin...</label>
-        <input type="checkbox" name="is_admin" id="is_admin" 
-        <?php if($user_to_update["is_admin"] == true) {echo "checked";} ?> />
-        </div>
-        
-        <div>
-        <label for="is_admin">Is active...</label>
-        <input type="checkbox" name="is_active" id="is_active" 
-        <?php if($user_to_update["is_active"] == true) {echo "checked";} ?> />
-        </div>
+            <div>
+                <label for="is_admin">Admin...</label>
+                <input type="checkbox" name="is_admin" id="is_admin" 
+                <?php if($user_to_update["is_admin"] == true) {echo "checked";} ?> />
+            </div>
+            
+            <div>
+                <label for="is_admin">Is active...</label>
+                <input type="checkbox" name="is_active" id="is_active" 
+                <?php if($user_to_update["is_active"] == true) {echo "checked";} ?> />
+            </div>
+
+        <?php } ?>
 
         <div>
             <button class="bg-sky-500 text-white 
@@ -120,7 +128,7 @@
 </main>
 
 <?php require ("views/templates/sidebar.php"); ?>
-<script src="js/scripts.js"></script>
+<script src="/js/scripts.js"></script>
 
 
 </body>

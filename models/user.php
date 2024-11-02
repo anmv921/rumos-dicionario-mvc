@@ -88,6 +88,24 @@ class User extends Base {
          return $query->execute([ $in_id ]);
     } // End function activateUser
 
+    public function updatePassword($in_id, $in_new_password) {
+
+        $query = $this->db->prepare("
+            UPDATE 
+                user
+            SET 
+                password = ?
+            WHERE 
+                id_user = ?
+        ");
+
+    return $query->execute([
+        password_hash( $in_new_password, PASSWORD_DEFAULT ),
+        $in_id
+     ]);
+
+    } // End function updatePassword
+
     public function updateUserInfo(
         $in_id, $in_new_name, $in_new_email, $in_active, $in_admin) {
 
