@@ -69,5 +69,47 @@ class Word extends Base {
     } // End function getWordOfTheDay
 
 
+    public function getRandomWord() {
+        // Create a common table expression to get the rows of the word table
+        // Then select a random row with the formula
+        // FLOOR(min_value + RAND() * (max_value - min_value +1))
+        $query = $this->db->prepare("
+            WITH cte AS (
+                SELECT 
+                    ROW_NUMBER() OVER (ORDER BY id_word ASC) AS row_num,
+                    id_word, 
+                    Word 
+                FROM 
+                    word) 
+                SELECT 
+                    row_num, 
+                    id_word, 
+                    Word 
+                FROM 
+                    cte 
+                WHERE 
+                    row_num = 
+                    FLOOR 
+                    ( ( SELECT MIN(row_num) FROM cte ) + 
+                    RAND() * ( ( SELECT MAX(row_num) FROM cte ) - 
+                    ( SELECT MIN(row_num) FROM cte ) + 1 ) );
+        ");
+
+        $query->execute();
+        return $query->fetch();
+
+    } // End function getRandomWord
+
+    public function create_word_of_the_day($in_id_word, $in_id_definition) {
+        $query = $this->db->prepare("
+            INSERT 
+            INTO
+                word_of_the_day 
+                (date, id_word, id_definition) 
+            VALUES 
+                (CURDATE(), ?, ?);");
+        return $query->execute([$in_id_word, $in_id_definition]);
+            
+    } // End function create_word_of_the_day
 
 } // End class

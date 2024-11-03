@@ -10,7 +10,7 @@
             </div>
 
             <div class="text-3xl lowercase ">
-                <?= $word_of_the_day["Word"]; ?>
+                <?= $word_of_the_day["Word"] ?? ''; ?>
             </div>
         </div>
 
@@ -18,7 +18,7 @@
         m-5" >
 
             <p class="">
-                <?= $word_of_the_day["Definition"]; ?>
+                <?= $word_of_the_day["Definition"] ?? ''; ?>
             </p>
 
             <div>
@@ -28,7 +28,8 @@
             font-semibold"
             type="button" >
 
-                <a href="<?= ROOT ?>/word/?search-word=<?= $word_of_the_day["Word"]; ?>">
+                <a 
+                href="<?= ROOT ?>/word/?search-word=<?= $word_of_the_day["Word"] ?? ''; ?>">
                     About this
                 </a>
 

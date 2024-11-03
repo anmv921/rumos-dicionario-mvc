@@ -585,10 +585,6 @@ video {
   margin: auto;
 }
 
-.m-10{
-  margin: 2.5rem;
-}
-
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -614,16 +610,16 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-0{
+  margin-bottom: 0px;
+}
+
 .mb-20{
   margin-bottom: 5rem;
 }
 
 .mb-5{
   margin-bottom: 1.25rem;
-}
-
-.mb-0{
-  margin-bottom: 0px;
 }
 
 .flex{
@@ -935,11 +931,6 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .pb-1{
