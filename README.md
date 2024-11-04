@@ -4,6 +4,10 @@
 
 ### Descrição
 
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/home.PNG" width="750px" /> 
+
+
 Este projeto consiste num dicionário que implementa a pesquisa de uma base de dados de
 palavras e os seus significados na língua inglesa - OPTED
 
