@@ -63,7 +63,7 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/wor
 - Form de registo
 
 ><img alt="ticket form 1" 
-src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/register.PNG" width="750px" /> 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/register.PNG" width="300px" /> 
 
 - Form de login
 
