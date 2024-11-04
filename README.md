@@ -88,17 +88,17 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/pro
     + Form de mudança de dados e de password
 
 ><img alt="ticket form 1" 
-src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/edit-profile.PNG" width="300px" /> 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/edit-profile.PNG" width="200px" /> 
 
 ><img alt="ticket form 1" 
-src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/editpass.PNG" width="750px" /> 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/editpass.PNG" width="200px" /> 
 
 - Área administrativa:
-    + Gestão de users:
-        + É mostrada uma tabela com os dados dos users
-        + É aqui possível fazer eliminação de users, clicando no botão "delete"
-        + Alteração dos dados de users - é possível editar o nome de user, o seu email
-        Alterar as permissões de admin, e ativar ou desativar os users.
+	- Gestão de users:
+		- É mostrada uma tabela com os dados dos users
+		- É aqui possível fazer eliminação de users, clicando no botão "delete"
+		- Alteração dos dados de users - é possível editar o nome de user, o seu email
+		Alterar as permissões de admin, e ativar ou desativar os users.
 
 ><img alt="ticket form 1" 
 src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/admin_area.PNG" width="750px" /> 
