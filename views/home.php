@@ -18,16 +18,9 @@
 </head>
 <body class="font-roboto" >
 
-    
-    
     <?php require ("templates/header.php"); ?>
-
-    
-
     
     <main>
-
-    
         
         <section class="flex flex-row justify-between p-7
         bg-gradient-to-r from-cyan-500 to-blue-500 mb-20" >
@@ -72,20 +65,8 @@
                     <?php require ("templates/word_lists_link.php"); ?>
                 </div>
 
-                <!-- <div class="flex flex-row gap-5 shrink-0" >
-
-                    <div class="w-11/12">
-                        <?php require ("templates/word_of_the_day.php"); ?>
-                        <?php require ("templates/new_words.php"); ?>
-                    </div>
-
-                    <div>
-                        <?php require ("templates/word_lists_link.php"); ?>
-                    </div>
-                </div> -->
                 
             </section>
-
 
             <!-- /******************* -->
             <!-- * BROWSE BY LETTER * -->
@@ -98,167 +79,22 @@
                 <div class="grid grid-cols-7 gap-4 mx-4 text-center place-items-center">
                     <div class="flex items-center hover:underline" >
                         <a class="bg-sky-300 px-2 py-1 rounded-full hover:bg-sky-400"
-                        href="#">
+                        href="<?= ROOT ?>/browse/0-9">
                             0-9
                         </a>    
                     </div>
-                    <div class="flex items-center hover:underline" >
-                        <a class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400"
-                        href="#">
-                            a
-                    </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400"
-                        >
-                            b
+                    
+                    <?php for ($i = 97; $i <= 122; $i++) { ?>
+                        <div class="flex items-center hover:underline" >
+                            <a class="bg-sky-300 px-3 py-0.5 
+                            rounded-full hover:bg-sky-400"
+                            href=
+                            "<?= ROOT ?>/browse/<?= chr($i); ?>">
+                                <?= chr($i); ?>
                         </a>
                     </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#" 
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            c
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            d
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            e
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            f
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            g
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            h
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            i
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            j
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            k
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            l
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            m
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            n
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            o
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            p
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            q
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            r
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            s
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            t
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            u
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            v
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            w
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            x
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            y
-                        </a>
-                    </div>
-                    <div class="flex items-center hover:underline">
-                        <a href="#"
-                        class="bg-sky-300 px-3 py-0.5 rounded-full hover:bg-sky-400">
-                            z
-                        </a>
-                    </div>
+                    <?php } ?>
+                  
                 </div>
 
             </section>

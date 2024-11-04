@@ -10,22 +10,15 @@
             New words
         </h2>
         <h3 class="text-3xl">
-            noctalgia
+            <a 
+            href="<?= ROOT ?>/word/?search-word=<?= $newest_word["Word"] ?? ''; ?>">
+            <?= $newest_word["Word"] ?? ''; ?>
+            </a>
         </h3>
 
         <div class="text-xs text-slate-400 font-semibold" >
-            October 07, 2024
-        </div>
-
-        <div>
-        <button type="button" 
-        class="bg-sky-600 text-white
-        hover:bg-sky-700 px-3 m-3 py-1
-        rounded-2xl font-semibold" >
-            More new words
-        </button>
-        </div>
-        
+            <?= $newest_word["date"]; ?>
+        </div>        
 
     </div>
 </div>

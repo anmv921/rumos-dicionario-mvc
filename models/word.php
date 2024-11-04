@@ -5,7 +5,6 @@ require_once("base.php");
 class Word extends Base {
 
     public function searchWord( $in_word ) {
-        // TODO full text search
         $query = $this->db->prepare("
             SELECT 
                 word.id_word, Word
@@ -111,5 +110,40 @@ class Word extends Base {
         return $query->execute([$in_id_word, $in_id_definition]);
             
     } // End function create_word_of_the_day
+
+    public function getNewestWord() {
+        $query = $this->db->prepare("
+            SELECT 
+            id_word, 
+            Word, 
+            id_user, 
+            DATE_FORMAT(DATE(created_at), '%d-%m-%Y') AS date
+            FROM word
+            ORDER BY created_at DESC
+            LIMIT 1;
+        ");
+
+        $query->execute();
+        return $query->fetch();
+    } // End function getNewestWord
+
+    public function getWordByLetter($in_letter) {
+
+        $query = $this->db->prepare("
+            SELECT 
+                id_word, Word
+            FROM 
+                word
+            WHERE 
+                Word LIKE ?
+            LIMIT 1000
+        ");
+
+
+        $query->execute([ $in_letter . "%" ]);
+
+        return $query->fetchAll();
+
+    } // End function getWordByLetter
 
 } // End class
