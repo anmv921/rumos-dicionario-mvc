@@ -39,7 +39,7 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/new
 
 ><img alt="ticket form 1" 
 src=
-"https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/word_lists_list.PNG" width="750px" /> 
+"https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/word_lists_list.PNG" width="300px" /> 
 
 - Grid/índice - Links para listas de palavras organizadas por primeira letra - a, b, c...
 
