@@ -21,7 +21,7 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/sea
 - Página da palavra
 
 <img alt="ticket form 1" 
-src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/search.PNG" width="750px" /> 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/word_results.PNG" width="750px" /> 
 
 - Palavra do dia - selecionada aleatoriamente na tabela, todos os dias durante o 
 1o carregamento da página. A tabela da palavra do dia tem a data e id de palavra, assim como o
