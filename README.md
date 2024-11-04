@@ -76,10 +76,10 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/Log
 src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/mail_activation.PNG" width="300px" /> 
 
 - User possui os seguintes dados:
-    - Nome
-    - Email
-    - Password
-   	- Tipo de user - admin, ou normal
+	- Nome
+	- Email
+	- Password
+	- Tipo de user - admin, ou normal
 
 ><img alt="ticket form 1" 
 src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/profile.PNG" width="300px" /> 
@@ -88,7 +88,7 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/pro
     + Form de mudança de dados e de password
 
 ><img alt="ticket form 1" 
-src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/edit-profile.PNG" width="750px" /> 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/edit-profile.PNG" width="300px" /> 
 
 ><img alt="ticket form 1" 
 src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/editpass.PNG" width="750px" /> 
