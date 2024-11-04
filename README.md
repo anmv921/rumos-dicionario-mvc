@@ -28,12 +28,12 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/wor
 id da definição da mesma.
 
 ><img alt="ticket form 1" 
-src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/wotd.PNG" width="750px" /> 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/wotd.PNG" width="300px" /> 
 
 - Secção de novas palavras - requer que palavras tenham data de criação. É mostrada a palavra mais recente, adicionada na base de dados através do phpMyAdmin.
 
 ><img alt="ticket form 1" 
-src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/new_word.PNG" width="750px" /> 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/new_word.PNG" width="300px" /> 
 
 - Link para listas de palavras - listas criadas por users; Existe um view com lista das listas e um com listas individuais.
 
