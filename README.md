@@ -68,7 +68,7 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/reg
 - Form de login
 
 ><img alt="ticket form 1" 
-src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/Login-form.PNG" width="750px" /> 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/Login-form.PNG" width="300px" /> 
 
 - É enviado um email para confirmar o registo.
 
