@@ -103,14 +103,6 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/edi
 ><img alt="ticket form 1" 
 src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/admin_area.PNG" width="750px" /> 
 
-- Página de perfil - é mostrada uma página com o nome e o email do user. 
-Clicando no ícone "lápis" é possível editar os dados do user.
-- Registo - é mostrado um form de registo onde o user deve preencher os seus dados
-conforme as validações implementadas.
-O fim do registo desencadeia o envio de um email através do pacote "php mailer"
-Este email permite ativar o perfil, inicialmente inativo.
-- Login - um simples form de login, que valida o user email e a respetiva passe, encriptada,
-na base de dados.
 
 ### Base de dados de palavras
 
