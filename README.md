@@ -16,7 +16,7 @@ O dicionário implementa as seguintes funcionalidades:
 - Pesquisa de palavras - utilizando o comando SQL LIKE
 
 <img alt="ticket form 1" 
-src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/search.PNG" width="750px" /> 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/search.PNG" width="300px" /> 
 
 - Página da palavra
 
@@ -102,7 +102,6 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/edi
 
 <img alt="ticket form 1" 
 src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/admin_area.PNG" width="750px" /> 
-
 
 - Página de perfil - é mostrada uma página com o nome e o email do user. 
 Clicando no ícone "lápis" é possível editar os dados do user.
