@@ -85,7 +85,7 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/mai
 src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/profile.PNG" width="300px" /> 
 
 - Página de perfil
-    + Form de mudança de dados e de password
+	- Form de mudança de dados e de password
 
 ><img alt="ticket form 1" 
 src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/edit-profile.PNG" width="200px" /> 
