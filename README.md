@@ -73,7 +73,7 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/Log
 - É enviado um email para confirmar o registo.
 
 ><img alt="ticket form 1" 
-src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/mail_activation.PNG" width="750px" /> 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/mail_activation.PNG" width="300px" /> 
 
 - User possui os seguintes dados:
     + Nome
