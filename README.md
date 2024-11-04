@@ -79,7 +79,7 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/mai
     - Nome
     - Email
     - Password
-   - Tipo de user - admin, ou normal
+   	- Tipo de user - admin, ou normal
 
 ><img alt="ticket form 1" 
 src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/profile.PNG" width="300px" /> 
