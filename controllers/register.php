@@ -70,8 +70,8 @@ if (isset ($_POST["register-user"])) {
 
                 // This would be replaced with the name of the new user
                 // But we're just playing pretend here
-                $receiverAddress = "andriy.myakush@gmail.com";
-                $receiverName = "Yours truly";
+                $receiverAddress = ENV["RECEIVER_ADDRESS"];
+                $receiverName = ENV["RECEIVER_NAME"];
                 
                 require("services/gmail.php");
             }

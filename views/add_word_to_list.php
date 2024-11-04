@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-        <?= $message ?>
+        <?= $message ?? ''; ?>
     </div>
 </body>
 </html>

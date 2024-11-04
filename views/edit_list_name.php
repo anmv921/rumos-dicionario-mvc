@@ -14,7 +14,7 @@
 
     <link rel="icon" type="image/x-icon" href="/images/bolt-lightning-solid.svg">
 
- 
+    <link rel="stylesheet" href="../css/custom_styles.css" >
 
 </head>
 <body>
@@ -82,7 +82,7 @@ $_SESSION["list_update_ok"] ) {
 </main>
 
 <?php require ("views/templates/sidebar.php"); ?>
-<script src="js/scripts.js"></script>
+<script src="/js/scripts.js"></script>
 
 </body>
 </html>

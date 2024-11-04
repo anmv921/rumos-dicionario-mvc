@@ -1,8 +1,13 @@
 <?php
 
 require("models/word_lists.php");
-
 $modelWordList = new WordList();
+
+if( isset($_SESSION["id_user"]) == false ) {
+    echo "Unauthorized";
+    http_response_code(401); // unauthorized
+    die();
+}
 
 if (isset ($_POST["add-word-to-list"])) {
     // Sanitization to prevent cross-site scripting

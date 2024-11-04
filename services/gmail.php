@@ -90,8 +90,6 @@ $mail->AltBody = 'This is a plain-text message body';
 //Attach an image file
 //$mail->addAttachment('images/phpmailer_mini.png');
 
-
-
 $mail_result = $mail->send();
 
 //send the message, check for errors

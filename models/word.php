@@ -129,7 +129,28 @@ class Word extends Base {
 
     public function getWordByLetter($in_letter) {
 
-        $query = $this->db->prepare("
+        if ($in_letter == "0-9") {
+            $query = $this->db->prepare("
+            SELECT 
+                id_word, Word
+            FROM 
+                word
+            WHERE 
+                Word LIKE '0%' OR
+                Word LIKE '1%' OR
+                Word LIKE '2%' OR
+                Word LIKE '3%' OR
+                Word LIKE '4%' OR
+                Word LIKE '5%' OR
+                Word LIKE '6%' OR
+                Word LIKE '7%' OR
+                Word LIKE '8%' OR
+                Word LIKE '9%'
+            LIMIT 1000
+        ");
+        $query->execute();
+        } else {
+            $query = $this->db->prepare("
             SELECT 
                 id_word, Word
             FROM 
@@ -137,11 +158,10 @@ class Word extends Base {
             WHERE 
                 Word LIKE ?
             LIMIT 1000
-        ");
-
-
-        $query->execute([ $in_letter . "%" ]);
-
+            ");
+            $query->execute([ $in_letter . "%" ]);
+        } // End if else
+     
         return $query->fetchAll();
 
     } // End function getWordByLetter

@@ -7,6 +7,8 @@ $arr_errors = [];
 $bool_validationError = false;
 $bool_list_creation_ok = false;
 
+
+
 if( isset($_SESSION["id_user"]) ) {
 
     if (isset ($_POST["create_list"])) {
@@ -55,5 +57,10 @@ if( isset($_SESSION["id_user"]) ) {
     
     } // End if
  } // End if
+ else {
+    http_response_code(401); // unauthorized 
+    header("location:". ROOT . "/");
+    exit;
+ }
 
 require("views/create_word_list.php");

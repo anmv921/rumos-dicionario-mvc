@@ -91,7 +91,7 @@ class WordList extends Base {
     public function getList($in_id) {
         $query = $this->db->prepare("
             SELECT
-                id_list, list_name
+                id_list, list_name, id_user
             FROM
                 word_list
             WHERE id_list = ?
@@ -122,11 +122,19 @@ class WordList extends Base {
     public function getListWord( $in_id_list, $in_id_word ) {
         $query = $this->db->prepare("
             SELECT 
-                id_list, id_word
+                word_list_has_word.id_list, 
+                word_list_has_word.id_word, 
+                word_list.id_user
             FROM 
                 word_list_has_word
+            LEFT JOIN
+                word_list
+            ON 
+                word_list.id_list = word_list_has_word.id_list
             WHERE 
-                id_list = ? AND id_word = ?
+                word_list_has_word.id_list = ? 
+                AND 
+                word_list_has_word.id_word = ?
         ");
 
         $query->execute([ $in_id_list, $in_id_word ]);

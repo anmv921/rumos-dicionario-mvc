@@ -8,7 +8,6 @@ $bool_success = false;
 
 require_once("models/user.php");
 $modelUser = new User();
-
 $logged_user = $modelUser->getUser($_SESSION["id_user"]);
 
 $user_to_update = $modelUser->getUser($id_user_to_update);

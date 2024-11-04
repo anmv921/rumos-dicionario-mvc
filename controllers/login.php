@@ -38,9 +38,6 @@ if ( isset( $_POST["submit-login"] ) ) {
         $bool_validationError = true;
     }
 
-
-
-
     if ( $bool_validationError === false ) {
 
 
@@ -60,7 +57,7 @@ if ( isset( $_POST["submit-login"] ) ) {
                 $bool_success = true;
     
                 // Todo add a dialog before redirect
-                header("Location: " . ROOT . "/");
+                header("location:" . ROOT . "/");
             }
             else{
                 $arr_errors[] = "Wrong email or password";

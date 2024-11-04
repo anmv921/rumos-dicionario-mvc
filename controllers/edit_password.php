@@ -6,6 +6,13 @@ $_SESSION["edit_password_ok"] = false;
 
 require_once("models/user.php");
 $modelUser = new User();
+
+if (  isset($_SESSION["id_user"]) == false ) {
+    echo "Unauthorized";
+    http_response_code(401);
+    die();
+}
+
 $logged_user = $modelUser->getUser($_SESSION["id_user"]);
 
 $arr_errors = [];

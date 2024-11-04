@@ -19,6 +19,9 @@
 
                 <?php if(isset($_SESSION["id_user"])) { ?>
 
+          
+
+
                     <?php 
                         require_once("models/user.php");
                         $modelUser = new User();
