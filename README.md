@@ -14,16 +14,45 @@ palavras e os seus significados na língua inglesa - OPTED
 O dicionário implementa as seguintes funcionalidades:
 
 - Pesquisa de palavras - utilizando o comando SQL LIKE
+
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/search.PNG" width="750px" /> 
+
 - Página da palavra
+
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/search.PNG" width="750px" /> 
+
 - Palavra do dia - selecionada aleatoriamente na tabela, todos os dias durante o 
 1o carregamento da página. A tabela da palavra do dia tem a data e id de palavra, assim como o
 id da definição da mesma.
+
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/wotd.PNG" width="750px" /> 
+
 - Secção de novas palavras - requer que palavras tenham data de criação. É mostrada a palavra mais recente, adicionada na base de dados através do phpMyAdmin.
-- Link para listas de palavras - listas criadas por users
-    - Existe um view com lista das listas e um com listas individuais
+
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/new_word.PNG" width="750px" /> 
+
+- Link para listas de palavras - listas criadas por users; Existe um view com lista das listas e um com listas individuais.
+
+<img alt="ticket form 1" 
+src=
+"https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/word_lists_list.PNG" width="750px" /> 
+
 - Grid/índice - Links para listas de palavras organizadas por primeira letra - a, b, c...
 
+<img alt="ticket form 1" 
+src=
+"https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/grid.PNG" 
+width="750px" /> 
+
 ### Página da palavra
+
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/word_results.PNG" width="750px" /> 
+
 - Nome
 - Definição - podem existir múltiplos resultados
 - Part of speech - advérbio, verbo, nome ou outra entidade gramatical.
@@ -32,21 +61,49 @@ id da definição da mesma.
 ### Gestão de users e área administrativa
 
 - Form de registo
+
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/register.PNG" width="750px" /> 
+
 - Form de login
+
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/Login-form.PNG" width="750px" /> 
+
 - É enviado um email para confirmar o registo.
+
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/mail_activation.PNG" width="750px" /> 
+
 - User possui os seguintes dados:
     + Nome
     + Email
     + Password
     + Tipo de user - admin, ou normal
+
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/profile.PNG" width="750px" /> 
+
 - Página de perfil
     + Form de mudança de dados e de password
+
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/edit-profile.PNG" width="750px" /> 
+
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/editpass.PNG" width="750px" /> 
+
 - Área administrativa:
     + Gestão de users:
         + É mostrada uma tabela com os dados dos users
         + É aqui possível fazer eliminação de users, clicando no botão "delete"
         + Alteração dos dados de users - é possível editar o nome de user, o seu email
         Alterar as permissões de admin, e ativar ou desativar os users.
+
+<img alt="ticket form 1" 
+src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/admin_area.PNG" width="750px" /> 
+
+
 - Página de perfil - é mostrada uma página com o nome e o email do user. 
 Clicando no ícone "lápis" é possível editar os dados do user.
 - Registo - é mostrado um form de registo onde o user deve preencher os seus dados
