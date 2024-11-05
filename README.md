@@ -20,6 +20,11 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/sea
 
 - Página da palavra
 
+	- Nome
+	- Definição - podem existir múltiplos resultados
+	- Part of speech - advérbio, verbo, nome ou outra entidade gramatical.
+	- Link para adição da palavra a uma lista, se existe login.
+
 ><img alt="ticket form 1" 
 src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/word_results.PNG" width="750px" /> 
 
@@ -47,16 +52,6 @@ src=
 src=
 "https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/grid.PNG" 
 width="750px" /> 
-
-### Página da palavra
-
-><img alt="ticket form 1" 
-src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/word_results.PNG" width="750px" /> 
-
-- Nome
-- Definição - podem existir múltiplos resultados
-- Part of speech - advérbio, verbo, nome ou outra entidade gramatical.
-- Link para adição da palavra a uma lista, se existe login.
 
 ### Gestão de users e área administrativa
 
