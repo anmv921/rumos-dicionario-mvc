@@ -33,9 +33,7 @@
                     <h1 class="p-1 text-2xl max-w-48">
                         Lightning Dictionary
                     </h1>
-                    <h2 class="p-1 text-lg">
-                        Words and such
-                    </h2>
+            
                 </div>
             </div>
 
