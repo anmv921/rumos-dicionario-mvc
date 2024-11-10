@@ -7,7 +7,10 @@ class Base
     public function __construct() {
     
         $this->db = new PDO(
-            "mysql:host=" .ENV["DB_HOST"]. ";dbname=" .ENV["DB_NAME"]. ";charset=utf8mb4", 
+            "mysql:host=" .
+            ENV["DB_HOST"] . 
+            ";dbname=" . ENV["DB_NAME"] . 
+            ";charset=utf8mb4;port=" . ENV["DB_PORT"], 
             ENV["DB_USER"],
             ENV["DB_PASSWORD"],
             [
