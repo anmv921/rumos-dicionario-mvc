@@ -60,9 +60,9 @@ class User extends Base {
 
         $query = $this->db->prepare("
             INSERT INTO user
-            (name, email, password, activation_key, api_key) 
+            (name, email, password, activation_key, api_key, is_active) 
             VALUES 
-            (?, ?, ?, ?, ?)
+            (?, ?, ?, ?, ?, ?)
         ");
 
         $query->execute([ 
@@ -70,7 +70,8 @@ class User extends Base {
             $data["email"], 
             password_hash( $data["password"], PASSWORD_DEFAULT ),
             $activation_key,
-            $api_key
+            $api_key,
+            1
         ]);
 
         $data['id_user'] = $this->db->lastInsertId();

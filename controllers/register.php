@@ -2,7 +2,7 @@
 
 require("models/user.php");
 
-$bool_sendEmail = true;
+$bool_sendEmail = false;
 
 $modelUser = new User();
 $bool_success = false;

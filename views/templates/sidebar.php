@@ -14,11 +14,9 @@
 
     <hr>
 
-    <div>
-        <a href="#">Shop</a>
-    </div>
+    
 
-    <hr>
+
 
     <div>
         <?php if(isset($_SESSION["id_user"])) { ?>

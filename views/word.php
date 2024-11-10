@@ -65,7 +65,14 @@
                         </select>
                     </label>
                 </p>
+                
+                
 
+        
+
+
+                
+             
                 <p class="flex flex-row justify-center" >
                     <button class="border-solid border-black hover:bg-slate-100
                     border-2 rounded-md px-2"
@@ -73,6 +80,7 @@
                         Add word to list
                     </button>
                 </p>
+     
 
             </form>
         </section>
