@@ -13,7 +13,7 @@ $url_parts = explode("/", $_SERVER["REQUEST_URI"]);
 
 $controller = $url_parts[1];
 
-if (empty($controller)){
+if (empty($controller) | str_starts_with($controller,"?i=") ){
     $controller = "home";
 }
 
