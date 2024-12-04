@@ -1,8 +1,9 @@
 <section class="border-solid border-2 border-neutral-100 bg-white">
 
-    <div class="flex flex-row justify-between p-5" >
+<!-- items-center justify-center text-center -->
+    <div class="flex flex-col xl:flex-row justify-between p-5 items-center" >
 
-        <div class="w-1/2 bg-yellow-300 p-10 m-5
+        <div class="w-2/3 bg-yellow-300 p-10 m-5
                 flex flex-col justify-center text-center">
 
             <div class="text-lg uppercase ">

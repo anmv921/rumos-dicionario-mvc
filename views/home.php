@@ -51,7 +51,7 @@
             <!-- * EXPLORE * -->
             <!-- ***********/ -->
             <section class="mx-5 w-5/6" >
-                <div class="grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-5 ">
+                <div class="grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 gap-5 ">
                         <?php require ("templates/word_of_the_day.php"); ?>
                         <?php require ("templates/new_words.php"); ?>
                         <?php require ("templates/word_lists_link.php"); ?>
@@ -63,7 +63,7 @@
             <h2 class="text-3xl my-3 p-6 bg-gray-100 w-screen ml-0">
                 Browse the English Dictionary
             </h2>
-            <section class="bg-sky-600 w-1/2 p-10 my-5 mx-5 text-white font-semibold">
+            <section class="bg-sky-600 w-5/6 md:w-2/3 lg:w-1/2 xl:w-1/3 p-10 my-5 mx-5 text-white font-semibold ">
                 <div class="grid grid-cols-7 gap-4 mx-4 text-center place-items-center">
                     <div class="flex items-center hover:underline" >
                         <a class="bg-sky-300 px-2 py-1 rounded-full hover:bg-sky-400"
@@ -78,8 +78,8 @@
                             href=
                             "<?= ROOT ?>/browse/<?= chr($i); ?>">
                                 <?= chr($i); ?>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
                     <?php } ?>
                 </div>
             </section>
