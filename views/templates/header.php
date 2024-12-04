@@ -49,9 +49,6 @@
 
                 <?php if(isset($_SESSION["id_user"])) { ?>
 
-          
-
-
                     <?php 
                         require_once("models/user.php");
                         $modelUser = new User();
@@ -68,7 +65,6 @@
                             </a>
                         </li>
 
-                       
                     <?php } ?>
 
                     <li>
@@ -84,8 +80,6 @@
                         <i class="fa-solid fa-right-from-bracket"></i> Logout
                         </a>
                     </li>
-
-                  
 
                 <?php } else { ?>
                 
