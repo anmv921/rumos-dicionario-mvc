@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/custom_styles.css" >
 
     <link rel="icon" type="image/x-icon" 
-    href="../images/bolt-lightning-solid.svg">
+    href="../images/moon-regular.svg">
 
 </head>
 <body class="font-roboto">

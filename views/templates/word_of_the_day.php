@@ -1,6 +1,6 @@
-<section class="border-solid border-2 border-neutral-100">
+<section class="border-solid border-2 border-neutral-100 bg-white">
 
-    <div class="flex flex-row justify-between" >
+    <div class="flex flex-row justify-between p-5" >
 
         <div class="w-1/2 bg-yellow-300 p-10 m-5
                 flex flex-col justify-center text-center">
@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <div class="w-1/2 flex flex-col justify-center text-center
+        <div class="w-1/2 flex flex-col justify-center text-center 
         m-5" >
 
             <p class="">

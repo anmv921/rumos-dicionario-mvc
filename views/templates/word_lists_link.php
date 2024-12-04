@@ -1,8 +1,8 @@
-<section class="border-solid border-2 border-neutral-100">
+<section class="border-solid border-2 border-neutral-100 bg-white">
     <div class="flex flex-row items-center justify-center text-center" >
 
         <div class="m-5 p-5 w-1/2">
-            <img src="images/blank-792125_1280.jpg" alt="">
+            <img src="images/ai-generated-8738968_1920.png" alt="">
         </div>
 
         <div class="w-1/2 p-5" >

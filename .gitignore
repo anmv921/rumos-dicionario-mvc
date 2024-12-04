@@ -1,4 +1,6 @@
-/images
+/images/*.jpg
+/images/*.png
+/images/*.svg
 /other
 .env
 /data/plan/

@@ -15,7 +15,43 @@
     <hr>
 
     <div>
+        <a href="#">Thesaurus</a>
+    </div>
+
+    <hr>
+
+    <div>
+        <a href="#">Translate</a>
+    </div>
+
+    <hr>
+
+   
+
+    <div>
         <a href="#">Shop</a>
+    </div>
+
+    <hr>
+
+  
+
+    <div>
+        <a href="#">Blog</a>
+    </div>
+
+    <hr>
+
+    
+
+    <div>
+        <a href="#">Word Games</a>
+    </div>
+
+    <hr>
+
+    <div>
+        <a href="#">Admin Area</a>
     </div>
 
     <hr>
@@ -27,6 +63,15 @@
     </div>
 
     <hr>
+
+    <div>
+        <a href="#">Logout</a>
+    </div>
+
+    <hr>
+
+   
+
 
 
 </div>

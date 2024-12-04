@@ -1,4 +1,4 @@
-<section class="border-solid border-2 border-neutral-100">
+<section class="border-solid border-2 border-neutral-100 bg-white">
 <div class="flex flex-row justify-between" >
 
     <div class="w-1/2 p-3 m-5">
