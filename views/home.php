@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Moonlight Dictionary</title>
 
     <link rel="stylesheet" 
@@ -24,24 +26,26 @@
         
         <section class="flex flex-row justify-between p-10
         bg-gradient-to-r from-cyan-500 to-blue-500 mb-20" >
-            <div class="flex flex-row items-center">
-                <div>
+            <div class="hidden md:flex md:flex-row md:items-center">
+
+                <div >
                     <img class="w-32"
                     src="images/Uster-Nänikon-blazon.svg.png" alt="">
                 </div>
+
                 <div class="p-7 text-white font-semibold">
                     <h1 class="p-1 text-2xl max-w-48">
                         Moonlight Dictionary
                     </h1>
-                   
                 </div>
+
             </div>
 
             <!-- ****** -->
             <!-- SEARCH -->
             <!-- ****** -->
             <div class="p-7" >
-            <?php require ("templates/search.php"); ?>
+                <?php require ("templates/search.php"); ?>
             </div>
         </section >
 
@@ -62,11 +66,13 @@
 
               
 
-                <div class="grid grid-rows-2 grid-cols-2 gap-5 ">
+                <div class="grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-5 ">
                         <?php require ("templates/word_of_the_day.php"); ?>
                         <?php require ("templates/new_words.php"); ?>
                         <?php require ("templates/word_lists_link.php"); ?>
                 </div>
+
+
             </section>
             <!-- /******************* -->
             <!-- * BROWSE BY LETTER * -->

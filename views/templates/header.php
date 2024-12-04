@@ -8,44 +8,44 @@
                         <i class="fa-solid fa-bars"></i>
                     </li>
 
-                    <li class="hover:underline">
+                    <li class="hidden lg:block hover:underline">
                         <a href="<?= ROOT ?>/">
                             Dictionary
                         </a>
                     </li>
 
-                    <li class="hover:underline">
+                    <li class="hidden lg:block hover:underline">
                         <a href="#">
                             Thesaurus
                         </a>
                     </li>
 
-                    <li class="hover:underline">
+                    <li class="hidden lg:block hover:underline">
                         <a href="#">
                             Translate
                         </a>
                     </li>
 
-                    <li class="hover:underline">
+                    <li class="hidden lg:block hover:underline">
                         <a href="#">
                             Shop<sup><i class="fa-solid fa-up-right-from-square"></i></sup>
                         </a>
                     </li>
 
-                    <li class="hover:underline">
+                    <li class="hidden lg:block hover:underline">
                         <a href="#">
                             Blog
                         </a>
                     </li>
 
-                    <li class="hover:underline">
+                    <li class="hidden lg:block hover:underline">
                         <a href="#">
                             Word Games
                         </a>
                     </li>
             </ul>
 
-            <ul class="flex flex-row gap-4">
+            <ul class="hidden md:flex md:flex-row md:gap-4">
 
                 <?php if(isset($_SESSION["id_user"])) { ?>
 
