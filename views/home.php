@@ -5,7 +5,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Moonlight Dictionary</title>
+    <title>Moonlight Dictionary<?php if ( isset(ENV["CURRENT_ENV"]) && ENV["CURRENT_ENV"] == "dev" ) {
+        echo " | DEV";
+    } ?></title>
 
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
@@ -18,19 +20,20 @@
 
     <link rel="stylesheet" href="css/custom_styles.css" >
 </head>
-<body class="font-roboto" >
+
+<body class="font-roboto overflow-x-hidden" >
 
     <?php require ("templates/header.php"); ?>
     
     <main>
-        <section class="flex flex-row justify-between p-10
+        <section class="flex flex-row justify-start md:justify-between p-1 md:p-10
         bg-gradient-to-r from-cyan-500 to-blue-500 mb-20" >
             <div class="hidden md:flex md:flex-row md:items-center">
-                <div >
-                    <img class="w-32"
+                <div class="hidden md:block">
+                    <img class="hidden lg:block w-32"
                     src="images/Uster-Nänikon-blazon.svg.png" alt="">
                 </div>
-                <div class="p-7 text-white font-semibold">
+                <div class="hidden md:block p-1 md:p-7 text-white font-semibold">
                     <h1 class="p-1 text-2xl max-w-48">
                         Moonlight Dictionary
                     </h1>

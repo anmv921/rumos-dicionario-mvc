@@ -3,8 +3,8 @@
 <!-- items-center justify-center text-center -->
     <div class="flex flex-col xl:flex-row justify-between p-5 items-center" >
 
-        <div class="w-2/3 bg-yellow-300 p-10 m-5
-                flex flex-col justify-center text-center">
+        <div class="w-3/4 md:w-2/3 bg-yellow-300 p-10 m-5
+                flex flex-col justify-center text-center items-center">
 
             <div class="text-lg uppercase ">
                 Word of the day
@@ -15,7 +15,7 @@
             </div>
         </div>
 
-        <div class="w-1/2 flex flex-col justify-center text-center 
+        <div class="w-1/2 flex flex-col justify-center text-center items-center
         m-5" >
 
             <p class="">

@@ -10,37 +10,37 @@
 
                     <li class="hidden lg:block hover:underline">
                         <a href="<?= ROOT ?>/">
-                            Dictionary
+                        <i class="fa-solid fa-house"></i> Dictionary
                         </a>
                     </li>
 
                     <li class="hidden lg:block hover:underline">
                         <a href="#">
-                            Thesaurus
+                        <i class="fa-solid fa-book"></i> Thesaurus
                         </a>
                     </li>
 
                     <li class="hidden lg:block hover:underline">
                         <a href="#">
-                            Translate
+                        <i class="fa-solid fa-globe"></i> Translate
                         </a>
                     </li>
 
                     <li class="hidden lg:block hover:underline">
                         <a href="#">
-                            Shop<sup><i class="fa-solid fa-up-right-from-square"></i></sup>
+                        <i class="fa-solid fa-shop"></i> Shop<sup><i class="fa-solid fa-up-right-from-square"></i></sup>
                         </a>
                     </li>
 
                     <li class="hidden lg:block hover:underline">
                         <a href="#">
-                            Blog
+                        <i class="fa-solid fa-blog"></i> Blog
                         </a>
                     </li>
 
                     <li class="hidden lg:block hover:underline">
                         <a href="#">
-                            Word Games
+                        <i class="fa-solid fa-puzzle-piece"></i> Word Games
                         </a>
                     </li>
             </ul>
