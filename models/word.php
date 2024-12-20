@@ -127,7 +127,10 @@ class Word extends Base {
         return $query->fetch();
     } // End function getNewestWord
 
-    public function getWordByLetter($in_letter) {
+    public function getWordByLetter($in_letter, $in_page, $in_offset, $in_limit) {
+
+
+        
 
         if ($in_letter == "0-9") {
             $query = $this->db->prepare("
@@ -146,7 +149,8 @@ class Word extends Base {
                 Word LIKE '7%' OR
                 Word LIKE '8%' OR
                 Word LIKE '9%'
-            LIMIT 1000
+            LIMIT ?
+            OFFSET ?
         ");
         $query->execute();
         } else {
@@ -156,10 +160,12 @@ class Word extends Base {
             FROM 
                 word
             WHERE 
-                Word LIKE ?
-            LIMIT 1000
-            ");
-            $query->execute([ $in_letter . "%" ]);
+                Word LIKE ? LIMIT " . $in_limit . " OFFSET " . $in_offset .
+            ";");
+            $query->execute([ 
+               $in_letter . "%",
+                
+         ]);
         } // End if else
      
         return $query->fetchAll();

@@ -17,6 +17,8 @@ if (empty($controller) | str_starts_with($controller,"?i=") ){
     $controller = "home";
 }
 
+// die($controller);
+
 if (!empty($url_parts[2])){
     $id = $url_parts[2];
 }

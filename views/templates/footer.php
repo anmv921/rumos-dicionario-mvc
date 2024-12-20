@@ -9,7 +9,10 @@
                     <a href="#">New Words</a>
                 </li>
                 <li class="hover:underline">
-                    <a href="#">Word of the Year 2024</a>
+                    <a href="#">Words of the day</a>
+                </li>
+                <li class="hover:underline">
+                    <a href="#">Word lists</a>
                 </li>
             </ul>
             <ul class="p-7" >
@@ -27,18 +30,10 @@
                     </a>
                 </li>
                 <li class="hover:underline">
-                    <a href="#" >
-                        Preferences
-                    </a>
-				</li>
-              
-                <li class="hover:underline">
                     <a href="#">
                         Corpus
                     </a>
                 </li>
-              
             </ul>
         </section>
-       
     </footer>

@@ -8,7 +8,7 @@
                         <div class="flex items-center hover:underline" >
 
                             <a class="bg-sky-300 px-2 py-1 rounded-full hover:bg-sky-400"
-                            href="<?= ROOT ?>/browse/0-9">
+                            href="<?= ROOT ?>/browse/0-9/page/1">
                                 0-9
                             </a>    
                             
@@ -19,7 +19,7 @@
                                 <a class="bg-sky-300 px-3 py-0.5 
                                 rounded-full hover:bg-sky-400"
                                 href=
-                                "<?= ROOT ?>/browse/<?= chr($i); ?>">
+                                "<?= ROOT ?>/browse/<?= chr($i); ?>/page/1">
                                     <?= chr($i); ?>
                                 </a>
                             </div>

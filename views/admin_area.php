@@ -118,7 +118,7 @@
 
         <td>
           <a href="<?= ROOT ?>/delete_user/<?= $user["id_user"]; ?>">
-            <i class="fa-solid fa-user-slash"></i>
+          <i class="fa-solid fa-trash"></i>
           </a>
         </td>
 
