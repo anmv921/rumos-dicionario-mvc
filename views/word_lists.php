@@ -10,8 +10,10 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/tailwind_style.css" >
-    <link rel="icon" type="image/x-icon" href="../images/bolt-lightning-solid.svg" >
+    <link rel="icon" type="image/x-icon" href="../images/moon-regular.svg" >
     <link rel="stylesheet" href="../css/custom_styles.css" >
+
+  
 
 </head>
 <body>
@@ -32,7 +34,6 @@
 
     <hr>
 
-    <?php if(isset($_SESSION["id_user"])) { ?>
     <div>
         <button type="button" 
         class="bg-yellow-400 hover:bg-yellow-500
@@ -42,11 +43,9 @@
             </a>
         </button>
     </div>
-    <?php } ?>
 
     <ul class="ul-no-discs" >
         <!-- Todo limit to like 5 and do a separate page with paginations -->
-        <?php if (empty($myLists) == false) { ?>
         <?php foreach ($myLists as $myList) { ?>
             <li>
                 <a href="<?= ROOT ?>/word_list/<?= $myList["id_list"] ?>">
@@ -56,7 +55,6 @@
                     <i class="fa-solid fa-trash"></i>
                 </a>
             </li>
-        <?php } ?>
         <?php } ?>
     </ul>
 

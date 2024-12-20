@@ -1,9 +1,9 @@
-<section class="border-solid border-2 border-neutral-100">
+<section class="border-solid border-2 border-neutral-100 bg-white">
 
-    <div class="flex flex-row justify-between" >
+    <div class="flex flex-col justify-between p-0 items-center" >
 
-        <div class="w-1/2 bg-yellow-300 p-10 m-5
-                flex flex-col justify-center text-center">
+        <div class="w-5/6 md:w-2/3 bg-yellow-300 p-20 m-5
+                flex flex-col justify-center text-center items-center">
 
             <div class="text-lg uppercase ">
                 Word of the day
@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <div class="w-1/2 flex flex-col justify-center text-center
+        <div class="w-1/2 flex flex-col justify-center text-center items-center
         m-5" >
 
             <p class="">

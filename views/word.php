@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/custom_styles.css" >
 
     <link rel="icon" type="image/x-icon" 
-    href="../images/bolt-lightning-solid.svg">
+    href="../images/moon-regular.svg">
 
 </head>
 <body class="font-roboto">
@@ -65,14 +65,7 @@
                         </select>
                     </label>
                 </p>
-                
-                
 
-        
-
-
-                
-             
                 <p class="flex flex-row justify-center" >
                     <button class="border-solid border-black hover:bg-slate-100
                     border-2 rounded-md px-2"
@@ -80,7 +73,6 @@
                         Add word to list
                     </button>
                 </p>
-     
 
             </form>
         </section>
