@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="/css/tailwind_style.css" >
 
-    <link rel="icon" type="image/x-icon" href="images/moon-regular.svg">
+    <link rel="icon" type="image/x-icon" href="/images/moon-regular.svg">
 
     <link rel="stylesheet" href="/css/custom_styles.css" >
 </head>
@@ -39,8 +39,6 @@
         </ul>   
 
         <div class="flex flex-row m-6">
-
-
         <?php if ($page !== 1) { ?>
         <div class="bg-yellow-300 p-2 mx-1 text-black font-medium rounded-lg hover:cursor-pointer hover:bg-yellow-200" >
                 <a href="<?= ROOT ?>/browse/<?= chr($i); ?>/page/<?= ($page - 1) ?>">
@@ -48,18 +46,12 @@
                 </a>
         </div>
         <?php } ?>
-
-    
-
         <div class="bg-yellow-300 p-2 mx-1 text-black font-medium rounded-lg hover:cursor-pointer hover:bg-yellow-200" >
-                
         <a href="<?= ROOT ?>/browse/<?= chr($i); ?>/page/<?= ($page + 1) ?>">
             Next Page &rarr;
         </a>
-        
         </div>
         </div>
-
         </div>
 
    

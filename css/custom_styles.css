@@ -7,7 +7,7 @@
   list-style-type: none;
 }
 
-table {
+/* table {
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
     font-family: sans-serif;
@@ -46,7 +46,7 @@ table {
   
   tfoot td {
     font-weight: bold;
-  }
+  } */
 
   .word_list {
     margin: 0.5rem;
@@ -97,10 +97,6 @@ table {
     color: #000;
     display: block;
     transition: 0.3s;
-  }
-
-  .sidebar a:hover {
-
   }
 
   .sidebar .closebtn {
