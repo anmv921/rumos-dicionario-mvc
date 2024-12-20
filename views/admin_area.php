@@ -21,7 +21,9 @@
 
   <?php require ("templates/header.php"); ?>
 
-  <main>
+  <br>
+
+  <main class="mt-20 h-screen">
 
 
         <h1 class="m-3 text-5xl bold" >
@@ -150,6 +152,9 @@
     </main>
 
     <?php require ("views/templates/sidebar.php"); ?>
+
+    <?php require ("views/templates/footer.php"); ?>
+
     <script src="/js/scripts.js"></script>
 
 </body>

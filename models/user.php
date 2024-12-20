@@ -54,6 +54,8 @@ class User extends Base {
 
     public function createUser($data) {
 
+        $bool_active = 0;
+
         $api_key = bin2hex(random_bytes(16));
 
         $activation_key = bin2hex(random_bytes(16));
@@ -71,7 +73,7 @@ class User extends Base {
             password_hash( $data["password"], PASSWORD_DEFAULT ),
             $activation_key,
             $api_key,
-            1
+            $bool_active
         ]);
 
         $data['id_user'] = $this->db->lastInsertId();

@@ -50,7 +50,7 @@
 
     <div>
         <a href="#">
-        <i class="fa-solid fa-puzzle-piece"></i> Word Games</a>
+        <i class="fa-solid fa-puzzle-piece"></i> Puzzles</a>
     </div>
 
     <hr>

@@ -20,7 +20,7 @@
 <body>
     <?php require ("views/templates/header.php"); ?>
 
-    <main>
+    <main class="mt-20 h-screen" >
         <form method="POST" action="<?= ROOT ?>/login/" >
 
             <fieldset class="text-center bg-gray-100 py-10">
@@ -93,9 +93,13 @@
         </form>
     </main>
 
-    <!-- <?php require ("templates/footer.php"); ?> -->
+
 
     <?php require ("views/templates/sidebar.php"); ?>
+
+                        <?php require ("templates/footer.php"); ?>
+
+
     <script src="/js/scripts.js"></script>
 
 </body>

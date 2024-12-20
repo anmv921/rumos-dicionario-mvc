@@ -24,12 +24,14 @@
     
     <?php require ("templates/header.php"); ?>
 
-    <main>
+    <main class="mt-20 h-screen" >
+
+
 
         
-        <div class="bg-sky-400 p-2">
+        <div class="bg-sky-400 p-7 mt-0 ">
             <?php require ("templates/search.php"); ?>
-    </div>
+        </div>
     
     <dialog id="dialog-add-to-list" class="border-solid
     border-black border-2" >
@@ -170,6 +172,11 @@
     </main>
     
     <?php require ("views/templates/sidebar.php"); ?>
+
+
+    <?php require ("views/templates/footer.php"); ?>
+
+
     <script src="/js/scripts.js"></script>
     
     

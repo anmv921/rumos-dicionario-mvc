@@ -18,28 +18,45 @@
 
 
 </head>
-<body>
+<body class="font-roboto" >
 
     <?php require ("templates/header.php"); ?>  
 
-    <h1 class="m-3 text-2xl bold">
-        Words starting with <?= $letter ?>
-    </h1>
+    <main class="mt-20 h-screen">
 
-    <ul class="m-3" >
-        <?php foreach ( $words as $word ) { ?>
-            <li class="bg-gray-200 p-2 m-3 w-4/5" >
-            <a 
-            href="<?= ROOT ?>/word/?search-word=<?= $word["Word"] ?? ''; ?>">
-                <?php echo $word["Word"]; ?>
-            </a>
-            </li>
-        <?php } ?>
-    </ul>
+        <h1 class="m-3 text-2xl bold ">
+            Words starting with <?= $letter ?>
+        </h1>
+
+
+        <ul class="m-3" >
+            <?php foreach ( $words as $word ) { ?>
+                <li class="bg-gray-200 p-2 m-3 w-4/5" >
+                <a 
+                href="<?= ROOT ?>/word/?search-word=<?= $word["Word"] ?? ''; ?>">
+                    <?php echo $word["Word"]; ?>
+                </a>
+                </li>
+            <?php } ?>
+        </ul>
+   
+
+       
+    </main>
+
+
     
 
 
     <?php require ("views/templates/sidebar.php"); ?>
+
+
+    <!-- doesnt work -->
+      <!-- <?php require ("views/templates/footer.php"); ?> -->
+
+
     <script src="/js/scripts.js"></script>
+
+
 </body>
 </html>

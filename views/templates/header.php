@@ -1,5 +1,5 @@
 
-<header class="w-screen bg-sky-600 ">
+<header class="w-screen bg-sky-600 fixed top-0">
         <nav class="flex flex-row justify-between bg-sky-600 
         text-white font-semibold p-7" >
             <ul class="flex flex-row gap-4" >
@@ -40,7 +40,7 @@
 
                     <li class="hidden lg:block hover:underline">
                         <a href="#">
-                        <i class="fa-solid fa-puzzle-piece"></i> Word Games
+                        <i class="fa-solid fa-puzzle-piece"></i> Puzzles
                         </a>
                     </li>
             </ul>

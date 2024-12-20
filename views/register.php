@@ -4,24 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | Lightning Dictionary</title>
-
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="/css/tailwind_style.css" >
-
     <link rel="icon" type="image/x-icon" href="/images/moon-regular.svg">
-    
     <link rel="stylesheet" href="/css/custom_styles.css" >
 </head>
 
 <body >
-
     <?php require ("views/templates/header.php"); ?>
 
-    <main>
+    <main class="mt-20 h-screen" >
         
     <form action="<?= ROOT ?>/register/" method="POST" >
 
@@ -116,9 +111,12 @@
 </form>
     </main>
 
-    <!-- <?php require ("templates/footer.php"); ?> -->
+
 
     <?php require ("views/templates/sidebar.php"); ?>
+
+    <?php require ("views/templates/footer.php"); ?>
+
     <script src="/js/scripts.js"></script>
 
 </body>
