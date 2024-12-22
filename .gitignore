@@ -7,3 +7,6 @@
 /node_modules
 README.md.backup
 /vendor
+.env.infinity
+.env.localhost
+index2.php
