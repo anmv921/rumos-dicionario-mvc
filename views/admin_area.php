@@ -9,7 +9,7 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/tailwind_style.css" >
-    <link rel="icon" type="image/x-icon" href="../images/moon-regular.svg">
+    <link rel="icon" type="image/x-icon" href="../images/<?= ENV["ICON_FILENAME"] ?>">
     <link rel="stylesheet" href="../css/custom_styles.css">
 </head>
 <body>
