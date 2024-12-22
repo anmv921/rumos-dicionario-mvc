@@ -1,8 +1,8 @@
-<section class="border-solid border-2 border-neutral-100 bg-white">
+<section class="border-solid border-2 border-neutral-100 bg-white w-11/12 md:w-2/3 lg:w-1/2">
 
     <div class="flex flex-col justify-between p-0 items-center" >
 
-        <div class="w-5/6 md:w-2/3 bg-yellow-300 p-20 m-5
+        <div class="w-11/12 md:w-2/3 bg-yellow-300 p-20 m-5
                 flex flex-col justify-center text-center items-center">
 
             <div class="text-lg uppercase ">

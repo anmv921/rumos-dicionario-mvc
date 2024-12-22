@@ -21,7 +21,7 @@
     
 <?php require ("templates/header.php"); ?>
 
-<main>
+<main class="mt-20 h-screen">
 
 
 
@@ -128,6 +128,10 @@
 </main>
 
 <?php require ("views/templates/sidebar.php"); ?>
+
+
+<?php require ("views/templates/footer.php"); ?>
+
 <script src="/js/scripts.js"></script>
 
 

@@ -52,9 +52,7 @@
                     <!-- /****************** -->
                     <!-- * WORD OF THE DAY * -->
                     <!-- ******************/ -->
-                    <div class="w-5/6  lg:w-1/2 m-0 p-0">
                     <?php require ("templates/word_of_the_day.php"); ?>
-                    </div>
                     <!-- /******************* -->
                     <!-- * BROWSE BY LETTER * -->
                     <!-- *******************/ -->
