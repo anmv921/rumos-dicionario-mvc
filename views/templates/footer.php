@@ -2,9 +2,6 @@
         <section 
         class="flex flex-col md:flex-row gap-1 md:gap-10 p-1 md:p-7 bg-sky-600 text-white font-semibold">
             <ul class="p-7" >
-                <li class="uppercase pb-3 hover:underline">
-                    <a href="#">Learn</a>
-                </li>
                 <li class="hover:underline" >
                     <a href="#">New Words</a>
                 </li>
@@ -16,18 +13,8 @@
                 </li>
             </ul>
             <ul class="p-7" >
-                <li class="uppercase pb-3 hover:underline">
-                    <a href="#">Develop</a>
-                </li>
                 <li class="hover:underline">
-                    <a href="#">Dictionary API</a>
-                </li>
-            </ul>
-            <ul class="p-7" >
-                <li class="uppercase pb-3 hover:underline">
-                    <a href="#">
-                        About
-                    </a>
+                    <a href="#">API</a>
                 </li>
                 <li class="hover:underline">
                     <a href="#">
