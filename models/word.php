@@ -68,6 +68,30 @@ class Word extends Base {
     } // End function getWordOfTheDay
 
 
+    // "
+    //         WITH cte AS (
+    //             SELECT 
+    //                 ROW_NUMBER() OVER (ORDER BY id_word ASC) AS row_num,
+    //                 id_word, 
+    //                 Word 
+    //             FROM 
+    //                 word) 
+    //             SELECT 
+    //                 row_num, 
+    //                 id_word, 
+    //                 Word 
+    //             FROM 
+    //                 cte 
+    //             WHERE 
+    //                 row_num = 
+    //                 FLOOR 
+    //                 ( ( SELECT MIN(row_num) FROM cte ) + 
+    //                 RAND() * ( ( SELECT MAX(row_num) FROM cte ) - 
+    //                 ( SELECT MIN(row_num) FROM cte ) + 1 ) );
+    //     "
+
+
+
     public function getRandomWord() {
         // Create a common table expression to get the rows of the word table
         // Then select a random row with the formula
@@ -88,10 +112,7 @@ class Word extends Base {
                     cte 
                 WHERE 
                     row_num = 
-                    FLOOR 
-                    ( ( SELECT MIN(row_num) FROM cte ) + 
-                    RAND() * ( ( SELECT MAX(row_num) FROM cte ) - 
-                    ( SELECT MIN(row_num) FROM cte ) + 1 ) );
+                    1841
         ");
 
         $query->execute();

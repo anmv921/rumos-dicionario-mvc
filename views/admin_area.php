@@ -20,7 +20,6 @@
 
   <main class="mt-20 h-screen">
 
-
         <h1 class="m-6 text-5xl bold" >
             Admin Area
         </h1>
@@ -56,7 +55,6 @@
           </thead>
 
           <tbody class="divide-y divide-gray-200 bg-white" >
-
 
           <?php
             foreach ( $users as $user ) { 
@@ -111,10 +109,24 @@
             </a>
           </td>
 
+          <!-- *********** -->
+          <!-- Delete user -->
+          <!-- *********** -->
+
           <td class="p-4 text-sm text-gray-900">
-            <a href="<?= ROOT ?>/delete_user/<?= $user["id_user"]; ?>">
-            <i class="fa-solid fa-trash"></i>
-            </a>
+
+              <form method="POST" action="<?= ROOT ?>/delete_user/<?= $user["id_user"]; ?>" >
+
+                  <input type="hidden" name="token" value="<?= $_SESSION['token'] ?? '' ?>">
+
+                  <input type="hidden" name="_METHOD" value="DELETE" />
+
+                  <button type="submit" name="delete-user" >
+                      <i class="fa-solid fa-trash"></i>
+                  </button>
+                  
+                  
+              </form>
           </td>
 
           <td class="p-4 text-sm text-gray-900">

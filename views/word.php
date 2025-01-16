@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>
-        <?php echo $word["Word"] ?? 'Word not found'; ?> | Lightning Dictionary
+        <?php echo $word["Word"] ?? 'Word not found'; ?>
     </title>
 
     <link rel="stylesheet" 
@@ -16,8 +16,7 @@
     
     <link rel="stylesheet" href="../css/custom_styles.css" >
 
-    <link rel="icon" type="image/x-icon" 
-    href="../images/moon-regular.svg">
+    <link rel="icon" type="image/x-icon" href="../images/<?= ENV["ICON_FILENAME"] ?>">
 
 </head>
 <body class="font-roboto">
