@@ -21,12 +21,33 @@
 
     <br>
 
-    <main class="my-20 h-screen">
+    <main class="my-20 h-screen  overflow-auto">
+
+   
 
     <div> 
         <h1 class="m-3 text-2xl bold ">
             Words starting with <?= $letter ?>
         </h1>
+
+        <div class="flex flex-row m-6">
+            <?php if ($page !== 1) { ?>
+                <div class="bg-yellow-300 p-2 mx-1 text-black 
+                font-medium rounded-lg hover:cursor-pointer hover:bg-yellow-200" >
+                    <a href="<?= ROOT ?>/browse/<?= chr($i); ?>/page/<?= ($page - 1) ?>">
+                        &larr; Previous Page
+                    </a>
+                </div>
+            <?php } ?>
+            <div class="bg-yellow-300 p-2 mx-1 text-black font-medium rounded-lg 
+            hover:cursor-pointer hover:bg-yellow-200" >
+                <a href="<?= ROOT ?>/browse/<?= chr($i); ?>/page/<?= ($page + 1) ?>">
+                    Next Page &rarr;
+                </a>
+            </div>
+        </div>
+
+
         <ul class="m-3" >
             <?php foreach ( $words as $word ) { ?>
                 <li class="bg-gray-200 p-2 m-3 w-4/5" >
@@ -38,21 +59,9 @@
             <?php } ?>
         </ul>   
 
-        <div class="flex flex-row m-6">
-        <?php if ($page !== 1) { ?>
-        <div class="bg-yellow-300 p-2 mx-1 text-black font-medium rounded-lg hover:cursor-pointer hover:bg-yellow-200" >
-                <a href="<?= ROOT ?>/browse/<?= chr($i); ?>/page/<?= ($page - 1) ?>">
-                &larr; Previous Page
-                </a>
-        </div>
-        <?php } ?>
-        <div class="bg-yellow-300 p-2 mx-1 text-black font-medium rounded-lg hover:cursor-pointer hover:bg-yellow-200" >
-        <a href="<?= ROOT ?>/browse/<?= chr($i); ?>/page/<?= ($page + 1) ?>">
-            Next Page &rarr;
-        </a>
-        </div>
-        </div>
-        </div>
+        
+
+    </div>
 
    
    

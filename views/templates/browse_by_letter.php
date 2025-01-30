@@ -1,6 +1,6 @@
 
 
-<section class="bg-sky-600 
+<section class="bg-sky-600
 w-11/12 md:w-2/3 lg:w-1/2 p-10 my-5 mx-0 text-white font-semibold ">
 
     <div class="grid grid-cols-7 text-center place-items-center gap-1 mx-1">

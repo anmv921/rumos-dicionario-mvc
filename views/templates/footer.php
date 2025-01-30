@@ -9,7 +9,7 @@
                     <a href="#">Words of the day</a>
                 </li>
                 <li class="hover:underline">
-                    <a href="#">Word lists</a>
+                    <a href="<?= ROOT ?>/word_lists">Word lists</a>
                 </li>
             </ul>
             <ul class="p-7" >

@@ -816,12 +816,12 @@ video {
   border-color: rgb(209 213 219 / var(--tw-divide-opacity));
 }
 
-.overflow-x-hidden{
-  overflow-x: hidden;
+.overflow-auto{
+  overflow: auto;
 }
 
-.overflow-y-scroll{
-  overflow-y: scroll;
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
 .rounded-2xl{
@@ -1032,10 +1032,6 @@ video {
 
 .pb-1{
   padding-bottom: 0.25rem;
-}
-
-.pb-3{
-  padding-bottom: 0.75rem;
 }
 
 .pt-1{

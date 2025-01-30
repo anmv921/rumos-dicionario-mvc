@@ -20,7 +20,7 @@
 
     <?php require ("templates/header.php"); ?>
 
-    <main class="p-5">
+    <main class="mt-20 p-5 h-screen overflow-auto">
 
     <h1 class="text-4xl" >
         Word Lists
@@ -57,6 +57,8 @@
             </li>
         <?php } ?>
     </ul>
+
+    <br>
 
     <h2 class="text-2xl">
         Public Lists
@@ -97,7 +99,7 @@
 
     </main>
 
-    <!-- <?php require ("templates/footer.php"); ?> -->
+    <?php require ("templates/footer.php"); ?>
 
     <?php require ("views/templates/sidebar.php"); ?>
     <script src="/js/scripts.js"></script>

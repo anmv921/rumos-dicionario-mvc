@@ -30,7 +30,7 @@ if ($bool_letter == false) {
 $page =  $url_parts[4];
 
 $page = (int) $page;
-$limit = 10;
+$limit = 50;
 $offset = ($page - 1) * $limit;
 
 $words = $modelWord->getWordByLetter(in_letter: $letter, in_page: $page, in_offset: $offset, in_limit: $limit);

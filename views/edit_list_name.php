@@ -18,9 +18,11 @@
 
 </head>
 <body>
-    <?php require ("templates/header.php"); ?>  
+    <?php require ("templates/header.php"); ?>
+    
+    <br>
 
-    <main>
+    <main class="mt-20  h-screen overflow-auto">
 
 
         
@@ -82,6 +84,9 @@ $_SESSION["list_update_ok"] ) {
 </main>
 
 <?php require ("views/templates/sidebar.php"); ?>
+
+<?php require ("views/templates/footer.php"); ?>
+
 <script src="/js/scripts.js"></script>
 
 </body>

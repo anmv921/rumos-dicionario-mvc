@@ -20,7 +20,9 @@
 
     <?php require ("templates/header.php"); ?>
 
-    <main>
+    <br>
+
+    <main class="mt-20">
     <form action="<?= ROOT ?>/create_word_list/" 
     method="POST" class="p-3">
 

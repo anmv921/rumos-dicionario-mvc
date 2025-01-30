@@ -22,12 +22,12 @@
     <?php require ("templates/header.php"); ?>
 
 
-    <main  class="relative overflow-y-scroll" >
+    <main  class="mt-20 relative h-screen overflow-auto mb-20" >
         <article class="word_list">
 
             <?php if( count($list) > 0 ) { ?>
 
-                
+                <br>
 
                 <h1 class="uppercase text-2xl" >
                     <?= $list[0]["list_name"] ?> <a 
@@ -35,6 +35,8 @@
                         <i class="fa-solid fa-pencil"></i>
                     </a>
                 </h1>
+
+                <br>
 
             <?php } else { ?>
                 <div class="text-yellow-400" >List is empty</div>
@@ -70,8 +72,11 @@
             } // End if 
             ?>
         </article>
+
+        
+
     </main>
-    <!-- <?php require ("templates/footer.php"); ?> -->
+     <?php require ("templates/footer.php"); ?> 
 
     <?php require ("views/templates/sidebar.php"); ?>
     <script src="/js/scripts.js"></script>

@@ -23,7 +23,7 @@
     
     <?php require ("templates/header.php"); ?>
 
-    <main class="mt-20 h-screen" >
+    <main class="mt-20 h-screen overflow-auto" >
 
 
 
@@ -67,6 +67,8 @@
                     </label>
                 </p>
 
+            
+
                 <p class="flex flex-row justify-center" >
                     <button class="border-solid border-black hover:bg-slate-100
                     border-2 rounded-md px-2"
@@ -74,6 +76,9 @@
                         Add word to list
                     </button>
                 </p>
+
+            
+
 
             </form>
         </section>
@@ -95,14 +100,20 @@
             Meaning of  <span class="font-bold lowercase">
                 <?php echo $word["Word"]; ?></span> in English
             </h1>
+
+            <?php if(isset($_SESSION["id_user"])) { ?>
             
-            <p class="px-7" >
-                <button class="bg-yellow-300 font-extrabold py-0.5 px-2
-                hover:bg-yellow-400 rounded-2xl"
-                type="button" id="btn-show-dialog" > 
-                <i class="fa-solid fa-list"></i> Add word to a list
-            </button>
+                <p class="px-7" >
+                    <button class="bg-yellow-300 font-extrabold py-0.5 px-2
+                    hover:bg-yellow-400 rounded-2xl"
+                    type="button" id="btn-show-dialog" > 
+                    <i class="fa-solid fa-list"></i> Add word to a list
+                </button>
+
+          
         </p>
+
+        <?php } ?>
 
         <?php foreach( $definitions as $definition ) { ?>
             <article class="px-7 py-3" >
