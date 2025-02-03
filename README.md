@@ -11,6 +11,8 @@ src="https://github.com/anmv921/rumos-dicionario-mvc/blob/main/readme_images/hom
 Este projeto consiste num dicionário que implementa a pesquisa de uma base de dados de
 palavras e os seus significados na língua inglesa - OPTED
 
+Site disponível em [https://dictionary.ct.ws/](https://dictionary.ct.ws/, https://dictionary.ct.ws/)
+
 O dicionário implementa as seguintes funcionalidades:
 
 - Pesquisa de palavras - utilizando o comando SQL LIKE
